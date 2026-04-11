@@ -1,0 +1,33 @@
+# Credenziali — MAI nel repo
+.credentials.json
+backups/
+
+# Config locale (permessi, MCP abilitati)
+settings.local.json
+
+# Sessioni e storia
+history.jsonl
+projects/
+sessions/
+file-history/
+shell-snapshots/
+
+# Cache ed effimeri
+cache/
+debug/
+paste-cache/
+ide/
+tasks/
+telemetry/
+todos/
+plans/
+downloads/
+plugins/
+
+# Stats e cache runtime
+stats-cache.json
+mcp-needs-auth-cache.json
+
+# OS e editor
+.DS_Store
+Thumbs.db
