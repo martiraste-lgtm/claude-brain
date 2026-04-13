@@ -166,6 +166,20 @@ Lista di partenza delle attività concrete per ogni Iniziativa.
 
 ## Struttura Cascata
 
+### Calibrazione per dimensione aziendale
+
+Non tutte le organizzazioni hanno bisogno degli stessi livelli OKR. Aggiungere livelli prima del necessario crea overhead senza beneficio:
+
+| Dimensione | Livelli OKR consigliati |
+|---|---|
+| ≤ 40 persone | Solo Company level |
+| 40 – qualche centinaio | Company + Team |
+| Oltre | Company + divisione/BU + Team |
+
+Per startup early stage (≤40 persone): spesso bastano Company OKR per i primi 2-3 cicli. I team sono abbastanza piccoli da operare già in alignment diretto con la Company Narrative. Aggiungere Team OKR quando i team iniziano ad avere priorità che non sono immediatamente derivabili dai Company Commitments.
+
+---
+
 ### Principio: Align, don't cascade
 
 Gli OKR non definiscono la strategia aziendale — ne sono ispirati. Non cascadare OKR meccanicamente (Company KR → Team Objective). Allineare i goal.
@@ -197,6 +211,34 @@ Tasks & Initiatives (settimanale/giornaliero)
 ```
 
 I Commitments trimestrali non si derivano direttamente dalla Vision — si derivano dagli Annual Strategic Goals. Senza questo layer intermedio, i goal trimestrali tendono a essere troppo astratti o troppo operativi.
+
+---
+
+---
+
+## Shared OKRs — Alignment Laterale tra Team
+
+La cascata verticale gestisce l'alignment top-down (Company → Team). Ma molti goal richiedono la collaborazione di team diversi allo stesso livello gerarchico. Questo è il dominio degli Shared OKRs.
+
+**Definizione**: OKR che due o più team si impegnano a raggiungere insieme. Non sono OKR duplicati — sono goal co-definiti e co-owned da team con dipendenze reciproche.
+
+**Quando usarli**: quando un team non può raggiungere un proprio Commitment senza il contributo attivo di un altro team. Se la dipendenza è unidirezionale e risolvibile con una Task, non serve uno Shared OKR.
+
+**Processo**:
+1. Team A identifica la dipendenza laterale durante la OKR season (ultime 2-3 settimane del ciclo precedente)
+2. Team A propone lo Shared OKR a Team B — anche in forma incompleta, ma con intent e contesto chiari
+3. Team B risponde Yes o No esplicitamente. **Se No**: Team A sa con certezza che quel goal non è perseguibile in questo ciclo. **Se Yes**: i due team co-definiscono l'OKR completo
+4. Lo Shared OKR viene inserito nel documento trimestrale di entrambi i team
+
+**Perché funziona**: la probabilità di accettazione da parte di Team B è molto più alta se entrambi i team condividono già la stessa priorità strategica comunicata dalla cascata top-down. Se la Company Narrative di Q2 è "mobile-first", uno Shared OKR su mobile trova terreno fertile in qualsiasi team.
+
+**Principio chiave**: allinearsi prima sui goal, non sulle azioni. Chiedere a un altro team "fai questa cosa per noi" genera resistenza. Proporre "raggiungiamo insieme questo risultato" genera collaborazione.
+
+**Validation check per Shared OKRs**:
+- [ ] Ogni Commitment ha un owner chiaro in ciascuno dei due team?
+- [ ] Entrambi i team hanno contribuito alla definizione (non è un OKR imposto)?
+- [ ] L'OKR è inserito nel documento di entrambi i team?
+- [ ] Esiste un meccanismo di check-in congiunto durante il ciclo?
 
 ---
 

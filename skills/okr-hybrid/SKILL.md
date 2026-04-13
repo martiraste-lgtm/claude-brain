@@ -11,10 +11,11 @@ metadata:
 
 Framework ibrido che unisce la precisione tecnica degli OKR con il contesto strategico degli NCT (Narrative, Commitments, Tasks) di Ravi Mehta. Aggiunge due layer mancanti a entrambi i framework originali: **Health Metrics** (guardrail sistematici) e la distinzione **Leading/Lagging + Frontier Stage** nei Commitments.
 
-Tre modalità operative:
+Quattro modalità operative:
 - **A — Creazione**: costruisci il framework completo da zero
 - **B — Validazione**: analisi e diagnosi di OKR esistenti
 - **C — Cascata**: declina Company OKR in Team OKR
+- **D — Shared OKRs**: gestisci OKR orizzontali tra team interdipendenti
 
 Leggi sempre `references/framework-ibrido.md` e `references/formule-e-template.md` prima di procedere.
 
@@ -29,7 +30,8 @@ All'attivazione, chiedi:
 > "In che modalità vuoi lavorare?
 > **A — Creazione**: costruiamo il framework da zero
 > **B — Validazione**: analizzo OKR già scritti
-> **C — Cascata**: declinare Company OKR in Team OKR"
+> **C — Cascata**: declinare Company OKR in Team OKR
+> **D — Shared OKRs**: gestire un OKR condiviso tra team"
 
 Se il contesto è già chiaro dal messaggio dell'utente, identifica la modalità senza chiedere.
 
@@ -45,6 +47,8 @@ Raccogli conversazionalmente (non come questionario):
 - Quale ciclo? (quarter, semestre)
 - Esistono Annual Strategic Goals? Se sì, quali?
 - Esistono Company OKR di riferimento da cui derivare?
+
+> **Skeleton OKR technique** (alternativa per team strutturati): invece di costruire gli OKR da zero in sessione, il manager/lead crea un documento parziale — Narrative in bozza, 1-2 Commitments, spazi vuoti — e lo condivide con il team chiedendo di proporre i Commitments mancanti e suggerire modifiche a quelli già scritti. Questo fa due cose simultaneamente: genera input bottom-up genuino E comunica il contesto strategico verso il basso prima ancora che il ciclo inizi. Suggerisci questa tecnica quando l'utente ha già un'idea di direzione ma vuole alignment del team.
 
 **Step 2 — Annual Strategic Goals (se mancano)**
 
@@ -160,6 +164,54 @@ Il Company Commitment non diventa automaticamente il Team Objective — lo alime
 **Weighting Matrix (opzionale — per contesti multi-team)**:
 Se ci sono più team da allineare, costruisci una matrice Company Objectives × Core Processes. Punteggio 0-5 per impatto. I nodi 4-5 sono dove costruire OKR; i nodi 0-1 non necessitano goal specifici. Vedi `references/formule-e-template.md` per il template.
 
+> **Skeleton OKR technique per la cascata**: invece di costruire i Team OKR in isolamento, il manager crea un documento con Narrative parziale e 1-2 Company Commitments rilevanti per quel team, lasciando spazi vuoti. Il team propone i propri Commitments partendo da quel contesto. Risultato: alignment garantito + input bottom-up autentico. Particolarmente utile quando si ha poco tempo e team numerosi.
+
+---
+
+### Modalità D — Shared OKRs
+
+Usare quando un team ha bisogno del contributo attivo di un altro team per raggiungere un proprio Commitment. La cascata verticale non risolve questo caso.
+
+**Step 1 — Identifica la dipendenza**
+
+Chiedi:
+- Qual è il Commitment che non puoi raggiungere da solo?
+- Quale team specifico è necessario?
+- La dipendenza è bidirezionale (entrambi beneficiano) o unidirezionale?
+
+Se la dipendenza è risolvibile con una singola Task o richiesta puntuale, non serve uno Shared OKR — basta coordinamento operativo.
+
+**Step 2 — Formula lo Shared OKR draft**
+
+Costruisci una bozza con:
+- Intent chiaro (cosa si vuole ottenere insieme)
+- Contesto strategico (perché è prioritario in questo ciclo — link alla Company Narrative)
+- 1-2 Commitments condivisi con ownership esplicita per team (es: Team A owner del C1, Team B owner del C2)
+
+La bozza non deve essere completa — serve a comunicare intent, non a chiudere tutto in anticipo.
+
+**Step 3 — Proposta e negoziazione**
+
+Team A propone lo Shared OKR a Team B durante la OKR season. Team B risponde esplicitamente:
+- **Yes** → co-definiscono i Commitments finali e li inseriscono entrambi nel proprio documento trimestrale
+- **No** → Team A sa con certezza che quel goal non è perseguibile in questo ciclo e può rivedere i propri Commitments di conseguenza
+
+**Step 4 — Co-definizione**
+
+Se accettato, i due team definiscono insieme:
+- Commitments con owner esplicito per ciascun team
+- Meccanismo di check-in congiunto (cadenza consigliata: bisettimanale)
+- Chi decide in caso di conflitto su priorità durante il ciclo
+
+**Validation check Shared OKRs**:
+```
+[ ] Ogni Commitment ha un owner esplicito (non "entrambi i team")?
+[ ] Entrambi i team hanno contribuito alla definizione?
+[ ] L'OKR è inserito nel documento trimestrale di entrambi i team?
+[ ] Esiste un meccanismo di check-in congiunto concordato?
+[ ] Il goal riflette benefit reciproco, non solo le esigenze di Team A?
+```
+
 ---
 
 ## Examples
@@ -227,6 +279,14 @@ KR3: ❌ Task travestita da KR. Non specifica cosa si vuole imparare né come si
 
 **"I KR sembrano giusti ma qualcosa non funziona"**
 Test: chiedi "se raggiungo questo KR, so con certezza che il business è migliorato?" Se la risposta è no o dipende da molti altri fattori, è probabilmente un output travestito da outcome. Vedi `references/anti-patterns.md`.
+
+**"I Commitments sembrano output ma non riusciamo a riscriverli come outcome"**
+Usa il **"Why?" trick**: per ogni Commitment sospetto, chiedi "perché vogliamo fare questo?" e ripeti finché non emerge una metrica di business.
+- "Integrare con Salesforce" → perché? → "Ridurre il churn a <2.5%/mese" ← questo è il vero Commitment
+- "Lanciare 3 nuove feature" → perché? → "Aumentare l'adoption rate al 25% degli utenti attivi" ← questo è il vero Commitment
+- "Fare 10 customer interview" → perché? → "Capire le cause del drop nell'onboarding" ← questo è una Task, non un Commitment
+
+Quando "perché?" porta a una metrica di business misurabile, quella è il vero Commitment. Quando porta a un altro processo o a "dobbiamo farlo", è probabilmente un output che va spostato a livello di Initiatives o Tasks.
 
 **"Non riusciamo a trovare la Narrative"**
 Causa: si sta cercando di scrivere OKR senza avere strategia. Soluzione: prima definisci gli Annual Strategic Goals. OKR senza strategia sono arbitrari per definizione.

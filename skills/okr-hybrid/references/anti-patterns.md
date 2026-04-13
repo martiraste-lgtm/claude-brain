@@ -126,6 +126,25 @@
 
 ---
 
+## Anti-pattern 11: OKR come Strumento di Performance Evaluation
+
+**Come si presenta**:
+- I KR vengono collegati a bonus, compensation o promozioni
+- I manager li presentano come "contratti" con il team
+- Il team viene valutato in base al completion rate degli OKR a fine ciclo
+
+**Perché è un problema**: collegare gli OKR alla valutazione distrugge l'ambizione strutturalmente. Le persone fanno sandbagging — abbassano i target preventivamente per garantirsi la valutazione positiva. Nessuno metterà mai un Moonshot se rischia di penalizzare il proprio bonus. L'effetto è esattamente l'opposto di quello desiderato: i goal diventano più conservativi, non più ambiziosi.
+
+Secondo meccanismo: chi non raggiunge un Commitment per ragioni fuori dal proprio controllo (pivot strategico, dipendenze di altri team, mercato) viene penalizzato per decisioni aziendali che non controllava. Il sistema smette di essere collaborativo e diventa burocratico e difensivo.
+
+**Come correggere**: separare nettamente i due sistemi.
+- OKR → strumento per alignment, focus e apprendimento collettivo. Non misura la persona, misura la direzione del team.
+- Performance evaluation → basarsi su comportamenti, qualità di esecuzione, ownership, impatto sul team — non sul completion rate di KR.
+
+Se manca accountability, la soluzione è il check-in frequente durante il ciclo (settimanale o bisettimanale) — non la valutazione annuale. Il problema non è l'assenza di conseguenze: è l'assenza di tracking in tempo reale.
+
+---
+
 ## Anti-pattern 10: OKR Scritti a Gennaio, Riesumati a Dicembre
 
 **Come si presenta**: planning elaboratissimo a inizio ciclo, zero tracking durante, valutazione superficiale a fine ciclo.
