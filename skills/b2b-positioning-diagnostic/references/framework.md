@@ -6,10 +6,11 @@
 3. [Pre-Positioning Analysis: Use Case Map](#use-case-map)
 4. [The 5-Step Positioning Process](#the-5-step-process)
 5. [Feature → Benefit → Value Mapping](#feature-benefit-value)
-6. [Unique Value Proposition Criteria](#uvp-criteria)
-7. [Positioning Templates](#templates)
-8. [Positioning vs Messaging](#positioning-vs-messaging)
-9. [PLG Messaging Sequencing](#plg-messaging)
+6. [Differentiation vs. Competitive Advantage](#differentiation-vs-advantage)
+7. [Unique Value Proposition Criteria](#uvp-criteria)
+8. [Positioning Templates](#templates)
+9. [Positioning vs Messaging](#positioning-vs-messaging)
+10. [PLG Messaging Sequencing](#plg-messaging)
 
 ---
 
@@ -177,6 +178,48 @@ The market category is the frame of reference that makes your value self-evident
 | 24-hour support | Support always available | Global operations have access to help across every time zone |
 
 Each feature can have multiple value points. A COMBINATION of features can also provide value. Group related capabilities into 2-3 "value themes" — don't overwhelm with 10 reasons.
+
+---
+
+## Differentiation vs. Competitive Advantage
+
+> "The most differentiated product might just be something nobody wants." — Ravi Mehta
+
+Completing the Feature → Benefit → Value mapping is necessary but not sufficient. Before validating a value theme, apply this critical filter: **is this a competitive advantage or just a difference?**
+
+Being unique is not inherently valuable. Uniqueness only matters if customers in your market want the unique thing you're offering — AND if that uniqueness makes them materially better off. Teams routinely confuse "what makes us different?" with "what makes us better?" — and positioning built on the former collapses in sales.
+
+### The operative distinction
+
+| | Difference | Competitive Advantage |
+|---|---|---|
+| **Definition** | A capability or attribute unique to you | A difference that makes you materially better for the customer |
+| **Customer behavior** | Customer notes it, may appreciate it, doesn't drive decision | Customer actively seeks it, drives purchase and retention |
+| **Over time** | Static — others can copy it | Compounding — network effects, data, switching costs amplify it |
+| **Example** | Tidal: exclusive tracks, CD-quality audio | Spotify: reliable streaming that works across all conditions |
+
+Tidal had genuine differences. Spotify had the advantage — streaming that actually worked on any connection. Listeners want music uninterrupted more than they care about exclusive tracks they'll likely never search for. Spotify won not by being unique, but by being better at the one thing that mattered most.
+
+Similarly: Uber didn't win because it was different from Lyft. It won because its larger driver network created faster pickups and lower prices — an advantage that compounded over time as the network grew.
+
+### The filter: apply it to every value theme
+
+After completing the "So what?" chain for each capability, run three questions:
+
+**1. "Does this make us materially better for the customer — not just different?"**
+If the answer is "we're unique in this" but not "customers are better off because of this," it's distinctiveness, not a positioning asset.
+
+**2. "Do customers actively want this — or are we hoping they will?"**
+Uniqueness doesn't create demand. The capability must map to something customers already feel is important. If you have to explain why they should care, it's not a clear advantage.
+
+**3. "Does this advantage compound over time, or can a competitor replicate it in a sprint?"**
+The strongest advantages get harder to replicate: network effects (more users → better product), proprietary data (more usage → smarter output), switching costs (deeper integration → higher cost of leaving). A difference that can be copied in 6 months is a short-term edge, not a sustainable positioning foundation.
+
+### Implication for the positioning exercise
+
+Apply this filter before finalizing value themes. Some will survive as genuine advantages — keep them front and center in positioning. Others will reveal themselves as mere distinctions — useful for feature-by-feature comparisons in sales but not load-bearing for the positioning statement.
+
+The goal isn't uniqueness. It's competitiveness — being better in the ways that matter most to best-fit accounts.
 
 ---
 

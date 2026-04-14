@@ -182,6 +182,8 @@ Five ways teams get stuck defining differentiated value:
 
 5. **Confusing value with objection handling.** Value = reason to BUY. Objection = concern that might prevent buying EVEN IF they want the product. Example: "Easy for IT to manage" might be an objection handler for IT stakeholders, not a value theme for the business buyer champion.
 
+6. **Mistaking uniqueness for advantage.** The team identifies genuine differences from competitors but doesn't verify whether those differences make customers materially better off. A capability can be completely unique and completely irrelevant — uniqueness is not a virtue on its own. Signal: customers acknowledge the difference in demos ("that's interesting") but don't cite it as a reason to buy, don't seek it out, and churn at the same rate as customers without it. Fix: for every value theme, apply the filter "does this difference create a real advantage — or just distinctiveness?" If the customer isn't materially better off with it, it's not a positioning asset regardless of how unique it is. Reference: see the Differentiation vs. Competitive Advantage section in framework.md for the full filter and operative distinction.
+
 ---
 
 ## Stage-Specific Problems
