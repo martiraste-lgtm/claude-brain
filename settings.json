@@ -1,4 +1,11 @@
-{
-  "autoUpdatesChannel": "latest",
-  "effortLevel": "high"
+﻿{
+    "autoUpdatesChannel":  "latest",
+    "effortLevel":  "high",
+    "sandbox":  {
+                    "network":  {
+                                    "allowedDomains":  [
+                                                           "stefano1479.app.n8n.cloud"
+                                                       ]
+                                }
+                }
 }
