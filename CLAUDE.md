@@ -178,7 +178,20 @@ Trigger: "positioning", "positioning audit", "competitive alternatives", "differ
 
 Output: facilitazione guidata step-by-step attraverso alternative competitive → valore differenziato → target clienti → market category → positioning canvas. Gestisce anche multi-prodotto.
 
-**Non usare** per copy homepage (usa saas-homepage-analyzer), sales deck, content writing, pricing page.
+**Non usare** per copy homepage (usa saas-homepage-analyzer), H1 writing (usa b2b-h1-writer), sales deck, content writing, pricing page.
+
+---
+
+### b2b-h1-writer
+Per scrivere o valutare l'H1 della homepage di un software B2B usando il framework Fletch (Pierri + Kaminsky), usa la skill `b2b-h1-writer`.
+
+Trigger: "scrivi l'H1 per", "headline homepage", "come formulo il titolo della homepage", "valuta questo H1", "H1 non funziona", "come scrivo l'headline", "migliora questa headline", "H1 per B2B".
+
+Due sole formule valide: **H1 = Category + Differentiation** oppure **H1 = JTBD + Differentiation**. La skill diagnostica quale usare, genera 3–5 varianti, le valuta con 4 criteri, e produce H1 consigliato + 2 alternative.
+
+**Posizione nella catena**: b2b-positioning-diagnostic → **b2b-h1-writer** → saas-homepage-analyzer.
+
+**Non usare** per copy completo della hero section (usa saas-homepage-analyzer), positioning strategico (usa b2b-positioning-diagnostic), o multi-prodotto con positioning non ancora definito (vai prima su b2b-positioning-diagnostic).
 
 ---
 
@@ -305,6 +318,71 @@ Trigger: "aiutami a definire gli OKR", "crea gli OKR per", "valida questi OKR", 
 - **C — Cascata**: declina Company OKR in Team OKR con il principio "align, don't cascade"
 
 **Non usare** per KPI dashboard (usa setup-metrics), roadmap di prodotto (usa pm-execution-outcome-roadmap), o sprint planning (usa pm-execution-sprint-plan).
+
+---
+
+### positioning-framework-estner
+Per costruire o auditare il positioning B2B SaaS usando il framework di Alex Estner (Primary Anchor + Secondary Angle), usa la skill `positioning-framework-estner`.
+
+Trigger: "positioning estner", "framework estner", "Alex Estner", "primary anchor", "secondary angle", "che anchor uso", "activity positioning", "use case positioning", "product category positioning", "competitive alternative positioning".
+
+Più prescrittivo e veloce di Dunford — ideale per pre-PMF o early post-seed dove serve una scommessa di positioning adesso, non dati perfetti. 4 anchor types: Activity, Use Case, Product Category, Competitive Alternative.
+
+**Non usare** per homepage copy (usa saas-homepage-analyzer), H1 writing (usa b2b-h1-writer), o quando l'utente vuole esplicitamente il framework Dunford 5-step (usa b2b-positioning-diagnostic).
+
+---
+
+### account-research
+Per produrre un brief approfondito su un prospect prima dell'outreach B2B, usa la skill `account-research`.
+
+Trigger: "research [company.com]", "fai la ricerca su", "prepara il brief per [azienda]", "brief prospect", "ricerca account".
+
+Output: contesto azienda, segnali attivi, persona giusta da contattare, angolo di messaggio consigliato.
+
+---
+
+### icp-scoring
+Per qualificare e assegnare tier A/B/C a una lista di account, usa la skill `icp-scoring`.
+
+Trigger: "score questa lista", "qualifica questi account", "assegna il tier a", "tier A/B/C", "qualifica la lista".
+
+Input: lista di aziende (CSV, testo, URL). Output: lista scored con tier e motivazione per account.
+
+---
+
+### case-study-creator
+Per strutturare e scrivere un case study B2B da usare in outreach, deck e sito, usa la skill `case-study-creator`.
+
+Trigger: "crea un case study per", "scrivi il case study di [cliente]", "trasforma questo risultato in un case study".
+
+Non è un racconto del lavoro fatto — è un documento che parla al prossimo buyer nello stesso segmento.
+
+---
+
+### signal-to-sequence
+Per trasformare un segnale rilevato in una campagna outbound completa con copy calibrato, usa la skill `signal-to-sequence`.
+
+Trigger: "crea una campagna per [segnale]", "signal to sequence", "costruisci la sequenza per [azienda] che ha appena [evento]", "campagna outbound da segnale".
+
+Input: segnale + account (o lista) + persona. Output: sequenza email e/o LinkedIn pronta per il lancio.
+
+---
+
+### mkt1 — Framework MKT1
+Framework di marketing strategy per startup B2B basato sulla newsletter MKT1. 8 skill coordinate, si usano in sequenza partendo da `mkt1-marketing-strategy-setup`.
+
+Trigger generale: "mkt1", "framework MKT1", "marketing strategy setup", "orchestra le skill MKT1".
+
+| Skill | Quando usarla |
+|-------|---------------|
+| `mkt1-marketing-strategy-setup` | Inizio engagement — orchestra le altre skill MKT1 |
+| `mkt1-company-overview` | Fondamenta: stage, modello, audience, competitive landscape |
+| `mkt1-marketing-advantages` | Identifica i vantaggi marketing unici del business |
+| `mkt1-perceptions` | Definisce le 3-4 narrative strategiche del mercato |
+| `mkt1-channel-strategy` | Determina il channel mix giusto per stage e GTM motion |
+| `mkt1-revenue-levers` | Prioritizza dove il marketing può avere impatto adesso |
+| `mkt1-big-bets` | Progetta 1-3 campagne coordinate ad alto impatto |
+| `mkt1-gaccs` | Brief operativo per ogni campagna o iniziativa |
 
 ---
 
