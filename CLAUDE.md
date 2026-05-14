@@ -234,6 +234,22 @@ Tono: sparring partner che sfida, mette in discussione, e provoca riflessione. S
 
 ---
 
+### pmi-strategy-advisor
+Sparring partner strategico per engagement con **PMI e aziende già esistenti**. Usa il Radar delle Cinque Forze come strato diagnostico product/org (strategia di business, trend ineludibili, stakeholder interni, vincoli interni, comportamento clienti), integrato con framework di business strategy (Martin, Rumelt) per il livello aziendale.
+
+Trigger: "analizziamo [azienda]", "strategia per [azienda]", "quali forze pesano in [azienda]", "prepariamoci all'engagement con", "diagnosi strategica di", "come intervenire su [azienda]", "pmi-strategy-advisor".
+
+3 modalità:
+- **A — Diagnosi completa**: mappa forze reali (peso + giudizio) + strategia dichiarata vs rivelata. Partenza per engagement nuovi.
+- **B — Intervento**: data la diagnosi, identifica leve, stima costo politico, sequenza le azioni.
+- **C — Sparring pre-engagement**: con informazioni limitate, costruisci ipotesi sul profilo di forze prima di entrare in azienda.
+
+**Differenza da `strategic-advisor`:** `strategic-advisor` è per startup e business strategy ad alto livello (where to play, how to win). `pmi-strategy-advisor` è per aziende già esistenti con organizzazione strutturata — diagnostica le forze organizzative che determinano le decisioni reali, non solo la strategia dichiarata.
+
+**Non usare** per startup early-stage (usa strategic-advisor), positioning B2B (usa b2b-positioning-diagnostic), preventivi PMI (usa preventivo-direttore-marketing).
+
+---
+
 ### brand-culture-b2c-analyst
 Per analizzare brand, campagne, prodotti e trend B2C attraverso i framework di Ana Andjelic e Jasmine Bina, usa la skill `brand-culture-b2c-analyst`.
 
