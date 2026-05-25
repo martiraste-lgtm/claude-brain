@@ -163,3 +163,30 @@ Togli sezioni 4 e 5. Aggiungi 1-2 atti in più sulla fase GTM e sull'acquisizion
 
 ### Variante con focus su 0→PMF
 Espandi gli atti 1-3 con più dettaglio su: ICP reale, canali di acquisizione, cosa non ha funzionato, turning point verso PMF. Comprimi gli atti successivi. Target: 3000–4000 parole.
+
+### Variante tematica (aziende consolidate, non startup)
+Per aziende con 20+ anni di storia dove la domanda centrale è lo stato attuale, non il percorso di fondazione. Sostituisci gli atti cronologici con capitoli tematici:
+
+1. **Il Modello** — come funziona il business, chi c'è dietro
+2. **Il Debito / Il Rischio** — la questione finanziaria o strategica aperta
+3. **Da dove viene la crescita** — i motori reali, spesso nascosti nei numeri
+4. **Le stelle del sistema** — i prodotti o acquisizioni chiave che trainano
+5. **Come stanno le stelle** — segnali di rischio o di tenuta
+6. **La matematica / Lo stress test** — proiezioni dichiarate come tali, con assunzioni esplicite
+7. **N cose difficili contemporaneamente** — il verdict espresso come lista di sfide concrete
+
+*Reference: TeamSystem / Michelon — maggio 2026*
+
+---
+
+## Varianti di hook
+
+### Hook numerico-paradosso (default)
+Apri con un numero singolo sorprendente + contraddizione immediata.  
+`"Mezzo miliardo di euro. [...] Ha fatturato 46 milioni ma ne ha persi 47. [...] Quindi o si sbagliano tutti, oppure la storia è più interessante."`  
+*Funziona quando:* l'azienda ha numeri che creano una contraddizione ovvia.
+
+### Hook vignetta-persona
+Apri con un personaggio immaginario (o reale) che usa inconsapevolmente il prodotto.  
+`"Mario si sveglia, sblocca il telefono. Ha ricevuto la notifica della busta paga da un software TeamSystem. Timbra il cartellino, con un software TeamSystem. [...] Hai indovinato."`  
+*Funziona quando:* l'azienda è così pervasiva che la sua presenza è invisibile, o quando il lettore probabilmente la usa già senza saperlo.
