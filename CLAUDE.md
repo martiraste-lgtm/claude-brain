@@ -402,6 +402,22 @@ Trigger generale: "mkt1", "framework MKT1", "marketing strategy setup", "orchest
 
 ---
 
+### company-teardown
+Per produrre analisi giornalistiche long-form di aziende reali (startup, scale-up, unicorni) per la rubrica "Company Teardown" della newsletter "da 0 al PMF". Copre origini, acquisizione primi clienti, positioning e GTM evolution. Opzionalmente: unit economics e salute finanziaria con scenari.
+
+Trigger: "fai il teardown di [azienda]", "analisi company teardown", "scrivi il teardown di [azienda]", "rubrica teardown", "analisi [azienda] per la newsletter".
+
+Workflow: verifica attiva (WebSearch + WebFetch + Apify se necessario) → domande di sviluppo → outline ad atti → draft → revisione editoriale.
+
+**Non usare per:**
+- Case study B2B per outreach → usa `case-study-creator`
+- Analisi strategica senza fatti verificati → usa `strategic-advisor`
+- Analisi vettore di crescita brand consumer challenger → usa `how-small-brands-growth`
+
+**Differenza con `how-small-brands-growth`:** `company-teardown` è ricerca giornalistica su una singola azienda reale — parte dai fatti verificati, costruisce una narrativa ad atti cronologici. `how-small-brands-growth` applica il framework dei 5 vettori di disruption (Kinner) per diagnosticare la strategia di crescita di un brand consumer challenger.
+
+---
+
 ## Come Aggiungere Nuove Skills
 
 1. Crea cartella in `~/.claude/skills/nome-skill/`
