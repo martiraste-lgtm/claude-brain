@@ -108,6 +108,20 @@ Quando l'autore non ha abbastanza dati o competenze per un giudizio:
 
 Questa onestà costruisce credibilità. Non bluffare mai.
 
+### 7. Takeaway embedded per sezione (pattern Hermann — solo per variante educational)
+Nella variante educational breakdown, ogni sezione principale può chiudersi con una box di learnings estratti:
+
+> **Cosa possiamo prendere da questa fase:** [2-3 principi applicabili, formulati come regole generali]
+
+Usare **solo** se si scrive in modalità educational (playbook analysis). Nel format investigativo standard (Michelon), i learnings non si embeddano nelle sezioni ma convergono in chiusura nel verdict. Mischiare i due approcci produce un ibrido che non funziona né come narrazione né come framework.
+
+### 8. Framework di terze parti citati per nome
+Quando un concetto che vuoi descrivere esiste già come framework consolidato (citato da un autore riconosciuto nel settore), citarlo per nome è più forte che descriverlo come se fosse tuo:
+
+> "Quello che Atlassian ha costruito è quello che Caroline Clark chiama 'GTM Nirvana' — il momento in cui PLG e sales-led si alimentano a vicenda invece di cannibalizzarsi."
+
+Usare con parsimonia: solo per framework davvero consolidati. Non inventare attribuzioni.
+
 ---
 
 ## Quando essere critici

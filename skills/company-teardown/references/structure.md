@@ -177,6 +177,21 @@ Per aziende con 20+ anni di storia dove la domanda centrale è lo stato attuale,
 
 *Reference: TeamSystem / Michelon — maggio 2026*
 
+### Variante educational breakdown (playbook analysis)
+Per aziende dove la domanda centrale è "come funziona il loro playbook?" — non "cosa è successo?" né "come stanno oggi?". Stile più vicino all'analisi per builders che al giornalismo investigativo. Non usa tensione narrativa centrale: ogni sezione è autonoma e chiude con takeaway estraibili.
+
+Struttura tipo:
+1. **Come è iniziata** — storia di fondazione, problema, beachhead ICP
+2. **Il playbook GTM** — motion (PLG/SLG/PLS), canali, pricing
+3. **Come hanno scalato** — land-and-expand, cross-sell, partner network
+4. **Gli acceleranti di crescita** — ecosystem, M&A, content, community
+5. **Il quadro generale** — cosa rende l'azienda difendibile a lungo termine
+6. **Cosa possiamo imparare** — pattern trasferibili, con attribuzione ai framework usati
+
+**Nota:** i learnings vengono embedding alla fine di ogni sezione, non solo in chiusura. L'hook è una domanda diretta ("perché leggere questo") piuttosto che un paradosso numerico. Lunghezza tipica: 6000–12.000 parole.
+
+*Reference: Atlassian / Hermann — marzo 2023*
+
 ---
 
 ## Varianti di hook
