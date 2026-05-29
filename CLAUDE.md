@@ -348,6 +348,17 @@ Più prescrittivo e veloce di Dunford — ideale per pre-PMF o early post-seed d
 
 ---
 
+### business-case-builder
+Per costruire o auditare un Business Case con il metodo di Leah Tharin (ProducTea), usa la skill `business-case-builder`.
+
+Trigger: "business case", "crea un business case per", "costruisci il business case", "vale la pena costruire X", "vale la pena investire in", "quanto vale questa opportunità", "stima l'uplift di", "value capture", "business case per questo differentiator", "dimmi se conviene fare X".
+
+Processo a 4 step (Draft → Breaking it up → Evaluate Confidence/Impact/Effort → Connect to Value Capture), color system 🔴🟡🟢, matrici Impact/Confidence, Effort (Difficult vs Complex), upside in range con vista risk-adjusted e de-risking (kill threshold). Multi-contesto: feature di prodotto, iniziativa GTM/marketing, deliverable di consulenza. Interattiva/sparring di default, con fast-path one-shot. Output: doc completo + diagramma mermaid + one-pager.
+
+**Non usare** per prioritizzazione pura RICE/ICE (usa pm-execution-prioritization-frameworks), Lean Canvas / modello di business (usa pm-product-strategy-business-model), PRD (usa prd-writer), pricing (usa pm-product-strategy-pricing-strategy), o market sizing TAM/SAM/SOM (usa pm-market-research-market-sizing).
+
+---
+
 ### account-research
 Per produrre un brief approfondito su un prospect prima dell'outreach B2B, usa la skill `account-research`.
 
