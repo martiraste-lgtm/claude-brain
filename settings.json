@@ -1,11 +1,37 @@
-﻿{
-    "autoUpdatesChannel":  "latest",
-    "effortLevel":  "high",
-    "sandbox":  {
-                    "network":  {
-                                    "allowedDomains":  [
-                                                           "stefano1479.app.n8n.cloud"
-                                                       ]
-                                }
-                }
+{
+  "permissions": {
+    "allow": [
+      "mcp__apify__call-actor",
+      "mcp__claude_ai_Google_Drive__create_file"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "mcp__chrome-devtools-mcp__navigate_page|mcp__chrome-devtools-mcp__new_page|mcp__chrome-devtools-mcp__list_pages|mcp__chrome-devtools-mcp__take_screenshot",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$port = \"$env:LOCALAPPDATA\\Google\\Chrome\\User Data\\DevToolsActivePort\"; if (-not (Test-Path $port)) { $chrome = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'; if (-not (Test-Path $chrome)) { $chrome = 'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe' }; Start-Process $chrome -ArgumentList '--remote-debugging-port=9222'; Start-Sleep -Seconds 3 }",
+            "shell": "powershell",
+            "timeout": 15,
+            "statusMessage": "Avvio Chrome con remote debugging..."
+          }
+        ]
+      }
+    ]
+  },
+  "enabledPlugins": {
+    "parallel@parallel-agent-skills": true
+  },
+  "sandbox": {
+    "network": {
+      "allowedDomains": [
+        "stefano1479.app.n8n.cloud"
+      ]
+    }
+  },
+  "autoUpdatesChannel": "latest",
+  "model": "opus",
+  "effortLevel": "max"
 }
