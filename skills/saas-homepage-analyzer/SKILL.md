@@ -87,6 +87,8 @@ Fornisci nell'ordine:
 
 Attiva quando l'utente fornisce URL, screenshot, copy descrittivo di una homepage (intera o parziale).
 
+> Se la pagina da analizzare è la **pricing page** (non la homepage), usa la skill sorella `pricing-teardown`.
+
 ### Step 1: Raccogli il Contesto
 
 Se non fornito, chiedi prima di analizzare:

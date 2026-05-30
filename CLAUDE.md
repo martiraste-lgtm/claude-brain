@@ -203,6 +203,19 @@ Trigger: "analizza questa homepage", "crea la homepage per", "che anchor usare",
 **Modo A — Creazione**: fornisci materiale grezzo (prodotto, ICP, problemi, competitor) → ottieni anchor scelto, VP Canvas, struttura consigliata, copy draft per ogni sezione.
 **Modo B — Analisi**: fornisci URL, screenshot o copy della homepage + contesto → ottieni diagnosi strutturata con valutazione ✅/🆗/❌ per ogni sezione e raccomandazioni prioritizzate.
 
+**Skill sorella**: per l'audit della **pricing page** (non homepage) usa `pricing-teardown`.
+
+---
+
+### pricing-teardown
+Per fare l'audit di conversione di una **pricing page** SaaS, usa la skill `pricing-teardown`.
+
+Trigger: "analizza questa pricing page", "teardown del pricing", "valuta la pricing page di", "cosa non va nel mio pricing", "pricing page audit", "migliora la mia pagina prezzi".
+
+Framework a 10 dimensioni (7 sulla UX del buyer umano: value prop, chiarezza piani, carico cognitivo, benefit-vs-feature, trust, psicologia, trasparenza prezzo + 3 sulla AI-agent readiness: pricing machine-readable, FAQ, profondità per-tier). Voto 1-4 per dimensione, pagella A-F, quick win + miglioramenti strategici. Accetta URL, screenshot, copy o descrizione. File di riferimento: `references/frameworks.md` (rubrica + benchmark trasparenza per ACV).
+
+**Skill sorella** di `saas-homepage-analyzer` (stesso metodo, pagina diversa). **Non usare** per strategia di prezzo / quanto far pagare (usa `pm-product-strategy-pricing-strategy`), né per audit della homepage (usa `saas-homepage-analyzer`).
+
 ---
 
 ### demand-gen-campaign-brief
