@@ -1,10 +1,10 @@
 ---
 name: sales-deck-creator
-description: Crea Sales Deck professionali pronti per Gamma a partire da descrizioni grezze di prodotti o servizi. Applica un framework completo di posizionamento, storytelling e struttura slide. Usa quando l'utente dice "crea un sales deck per", "trasforma in sales deck", "prepara il deck per", "sales deck per [prodotto]". Do NOT use for investor deck, pitch deck per investitori, o presentazioni interne non commerciali.
+description: Crea Sales Deck professionali pronti per Gamma a partire da descrizioni grezze di prodotti o servizi. Applica un framework completo di posizionamento, storytelling e struttura slide. Usa quando l'utente dice "crea un sales deck per", "trasforma in sales deck", "prepara il deck per", "sales deck per [prodotto]". Do NOT use for investor deck, pitch deck per investitori, presentazioni interne non commerciali, o per preparare demo call live (usa sales-demo-estner).
 license: MIT
 metadata:
   author: utente
-  version: 1.0.0
+  version: 1.1.0
 ---
 
 ## Overview
@@ -21,14 +21,22 @@ Prima di generare qualsiasi contenuto, leggi TUTTI i file nella cartella `refere
 2. `references/02-cosa-non-fare.md` — Errori ricorrenti da evitare e flag di allarme
 3. `references/03-fondamenti-posizionamento.md` — Come posizionare il prodotto tra le alternative
 4. `references/04-struttura-sales-deck.md` — I 12 "pezzi del puzzle": struttura slide-by-slide
+5. `references/05-demo-loop-proof-nextstep.md` — Pattern Estner: demo loop per le slide capacità, template di proof, closing "own the next step"
 
 Questi file contengono il framework completo, le linee guida, i criteri di qualita e le regole di valutazione. Applicali integralmente.
 
 Opzionalmente consulta `references/esempio-sales-deck.pdf` come riferimento visivo di un deck reale ben fatto.
 
-### Step 2: Raccogli le informazioni dall'utente
+### Step 2: Triage + raccolta informazioni
 
-Chiedi all'utente di incollare le informazioni sul prodotto/servizio. Possono essere grezze, disordinate, incomplete. Accetta qualsiasi formato.
+**Triage iniziale — prima domanda da fare sempre:** per quale momento di vendita serve questo materiale?
+
+- **Primo meeting / pitch commerciale / asset da inviare in outbound** → procedi con questa skill (deck narrativo a 12 pezzi)
+- **Demo call prenotata con un prospect già interessato** → quello che serve non è un deck ma un call kit: suggerisci la skill `sales-demo-estner` (struttura 10-step + discovery SPICED + demo loop). L'utente decide; se vuole comunque un deck di supporto alla demo, procedi ma applica i pattern del file 05 (poche capability, loop sui pain, closing con opzioni)
+
+Se il contesto è già chiaro dal messaggio dell'utente, non fare la domanda: acknowledge e parti.
+
+Poi chiedi all'utente di incollare le informazioni sul prodotto/servizio. Possono essere grezze, disordinate, incomplete. Accetta qualsiasi formato.
 
 Se le info sono troppo scarse per costruire un deck efficace, fai domande mirate su:
 - **Cosa fa il prodotto** (categoria, use case principale)
@@ -77,12 +85,12 @@ Genera il deck seguendo la struttura dei 12 pezzi del puzzle (file 04), adattand
 6. **Alternative disponibili** — Cosa puo scegliere il cliente oggi e i limiti
 7. **Scenario ideale (New Way)** — Come dovrebbe essere il nuovo modo
 8. **Introduzione alla soluzione** — Il prodotto come risposta naturale
-9-11. **Capacita + Benefici** — Cosa permette di fare + vantaggi (2-4 slide)
+9-11. **Capacita + Benefici** — Cosa permette di fare + vantaggi (2-4 slide). Usa il demo loop del file 05: re-anchor al pain → una capability → una story breve → beneficio esplicito. Max 2-3 capability: show fewer features, go deeper
 12. **Demo** (opzionale) — Riferimento a demo/screenshot se disponibili
-13. **Trust & Proof** — Social proof, dati, testimonianze, KPI
+13. **Trust & Proof** — Social proof, dati, testimonianze, KPI. Usa i 4 template di proof del file 05; distribuisci le story anche dentro le slide capacità, non solo qui
 14. **Offerta & Pricing** — Cosa offri e a che prezzo (se applicabile)
 15. **FAQ / Obiezioni** — Risposte alle domande tipiche
-16. **Next Step** — Prossimi passi chiari e azionabili
+16. **Next Step** — Prossimi passi chiari e azionabili. Applica "own the next step" del file 05: raccomandazione chiara + 2 opzioni A/B + outcome + timeline + criteri di successo
 
 ### Step 5: Verifica qualita
 
@@ -95,9 +103,10 @@ Prima di consegnare, verifica il deck contro questa checklist (derivata dai file
 - [ ] POV chiaro e motivato
 - [ ] Pain points reali e specifici del segmento
 - [ ] Capacita e benefici separati dalle feature
-- [ ] Social proof / dati concreti
+- [ ] Slide capacita costruite col demo loop (pain → capability → story → beneficio), max 2-3 capability
+- [ ] Social proof / dati concreti, distribuiti anche nelle slide capacita
 - [ ] Storytelling problema-soluzione
-- [ ] Next step chiarissimi
+- [ ] Next step chiarissimi: raccomandazione + 2 opzioni A/B + outcome + timeline
 
 **NON deve avere:**
 - [ ] Zero contesto (prodotto troppo presto)

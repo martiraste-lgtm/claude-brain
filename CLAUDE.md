@@ -145,7 +145,24 @@ Per creare Sales Deck professionali pronti per Gamma, usa la skill `sales-deck-c
 
 Trigger: "crea un sales deck per", "trasforma in sales deck", "prepara il deck per".
 
-**Non usare** per investor deck, pitch deck per investitori, o presentazioni interne.
+Fa triage iniziale sul momento di vendita: se serve preparare una demo call live (non un deck), indirizza verso `sales-demo-estner`.
+
+**Non usare** per investor deck, pitch deck per investitori, presentazioni interne, o demo call live (usa sales-demo-estner).
+
+---
+
+### sales-demo-estner
+Per preparare demo call B2B SaaS con la Golden Structure a 10 step di Alex Estner e la discovery SPICED, usa la skill `sales-demo-estner`.
+
+Trigger: "prepara la demo per", "demo call", "sales demo", "struttura della demo", "come imposto la demo", "script demo", "SPICED", "demo estner", "la demo non converte".
+
+2 modalità:
+- **A — Preparazione**: intake (prodotto, ICP, prospect, durata, pricing, customer story) → call kit completo: 10-step adattati, script con frasi pronte, domande SPICED calibrate, buy-in summary template, demo loop per ogni pain, closing con opzioni A/B
+- **B — Review**: diagnosi di demo che non convertono con la griglia dei 6 anti-pattern
+
+**Posizione nella catena**: positioning (estner/Dunford) → `sales-deck-creator` (deck da presentare/inviare) oppure **sales-demo-estner** (demo call prenotata).
+
+**Non usare** per sales deck narrativi (usa sales-deck-creator), positioning (usa positioning-framework-estner o b2b-positioning-diagnostic), o sequenze outbound (usa signal-to-sequence).
 
 ---
 
