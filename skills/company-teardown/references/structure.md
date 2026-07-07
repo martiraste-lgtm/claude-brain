@@ -122,7 +122,50 @@ Tono: speculativo ma fondato su evidenza. Dichiarare esplicitamente che è ipote
 
 ---
 
-### 6. Closing synthesis
+### 6. [Modulo raccomandato] Le leve di crescita
+
+Modulo trasversale: si può innestare in **tutti i format** (investigativo ad atti e educational breakdown). Proposto di default in Fase 2.
+
+**Obiettivo:** isolare e nominare i meccanismi distinti che spiegano la crescita, invece di lasciarli sparsi nella narrazione. Non un elenco di "cose belle", ma una scomposizione del motore.
+
+**Struttura:** da 4 a 8 leve di prodotto/marketing/business. Ogni leva con la stessa struttura ripetuta:
+- **Cosa fa** — la scelta o il meccanismo, in una riga
+- **Perché funziona** — sempre con un fatto o un numero a supporto (no aggettivi a vuoto)
+- **Come applicarlo** — il principio trasferibile che il lettore può portarsi a casa (takeaway embedded, cfr. `narrative-guide.md` tecnica #7)
+
+**Posizionamento nel pezzo:**
+- Nell'educational breakdown: è il cuore del pezzo, le leve sono le sezioni principali
+- Nel format investigativo: dopo gli atti, prima del flywheel/closing — sintetizza il "perché cresce" che gli atti hanno raccontato cronologicamente
+
+**Regola:** una leva è tale solo se è davvero distinta e dimostrabile. Se due "leve" sono la stessa cosa detta in due modi, accorpale. Meglio 4 leve vere che 8 gonfiate.
+
+*Reference: WeRoad / Mastella — le 6 leve (vedi `examples/weroad-mastella.md`)*
+
+---
+
+### 7. [Modulo raccomandato — con gate] Il/i growth flywheel
+
+Modulo trasversale: disponibile in **tutti i format**. Proposto di default in Fase 2, ma soggetto a gate.
+
+**Obiettivo:** mappare i loop auto-alimentanti che tengono in moto la macchina — i cicli in cui un'azione del cliente produce l'input che porta il cliente successivo.
+
+**Struttura:** per ogni flywheel, descrivi il ciclo come catena di step che si chiude su sé stessa:
+> Più [X] → genera [Y] → che produce [Z] → che porta più [X]
+
+Se i flywheel sono più di uno, spiega come si rinforzano a vicenda.
+
+**Come applicarlo (il takeaway del modulo):** mappa il customer journey e cerca il punto preciso in cui un'azione del cliente produce l'input che ti porta il cliente successivo. Quello è il flywheel.
+
+**⚠️ GATE — quando NON includere questa sezione:**
+Includi il flywheel **solo se il loop è dimostrabile dai fatti** (numeri, comportamenti osservabili, dichiarazioni verificate). Se l'azienda non ha un loop reale e auto-alimentante, **ometti la sezione** — non costruire un flywheel forzato per avere il diagramma. Un loop inventato viola l'etica anti-bluff della skill (cfr. `narrative-guide.md`, "Cosa NON fare").
+
+**Named framework (opzionale):** il flywheel può essere agganciato al framework dei **growth loops** (Viral, Usage, Collaboration, User-Generated, Referral) — cfr. skill `pm-go-to-market-growth-loops`. Citalo per nome solo se calza davvero, coerente con la tecnica #8 della `narrative-guide.md`. Non duplicare qui la spiegazione del framework.
+
+*Reference: WeRoad / Mastella — i 2 flywheel (contenuti + community), vedi `examples/weroad-mastella.md`*
+
+---
+
+### 8. Closing synthesis
 
 **Obiettivo:** ritornare alla domanda o paradosso dell'apertura con un verdetto.
 
@@ -151,8 +194,12 @@ Tono: speculativo ma fondato su evidenza. Dichiarare esplicitamente che è ipote
 | Ogni atto (4-8 atti) | 250–600 parole |
 | Facciamo i conti (se presente) | 500–900 parole |
 | Opportunità adiacenti (se presente) | 300–500 parole |
+| Leve di crescita (se presente) | 600–1200 parole (totale per 4-8 leve) |
+| Flywheel (se presente) | 250–450 parole |
 | Closing synthesis | 300–500 parole |
-| **Totale** | **3500–5000 parole** |
+| **Totale** | **3500–5000 parole** (di più se educational breakdown) |
+
+> Nota: i moduli leve + flywheel incidono sul totale. In un educational breakdown dove le leve *sono* le sezioni principali, il pezzo può superare le 5000 parole (vedi variante dedicata sotto).
 
 ---
 
@@ -190,7 +237,9 @@ Struttura tipo:
 
 **Nota:** i learnings vengono embedding alla fine di ogni sezione, non solo in chiusura. L'hook è una domanda diretta ("perché leggere questo") piuttosto che un paradosso numerico. Lunghezza tipica: 6000–12.000 parole.
 
-*Reference: Atlassian / Hermann — marzo 2023*
+**I moduli leve di crescita (sezione 6) e flywheel (sezione 7) sono nativi di questo format:** qui le leve diventano le sezioni principali del pezzo, e il flywheel chiude la spiegazione del motore prima delle lezioni finali. È il caso del reference WeRoad/Mastella, che usa entrambi i moduli in modo esemplare.
+
+*Reference: Atlassian / Hermann — marzo 2023; WeRoad / Mastella — giugno 2026 (vedi `examples/weroad-mastella.md` per leve + flywheel)*
 
 ---
 

@@ -122,6 +122,24 @@ Quando un concetto che vuoi descrivere esiste già come framework consolidato (c
 
 Usare con parsimonia: solo per framework davvero consolidati. Non inventare attribuzioni.
 
+### 9. Modulo "leve di crescita"
+Quando l'azienda ha un motore di crescita fatto di scelte distinte, non disperderle nella narrazione: isolale come **leve nominate** e dai a ognuna la stessa struttura ripetuta:
+
+> **Cosa fa:** [la scelta/meccanismo in una riga]
+> **Perché funziona:** [sempre con un fatto o un numero — il 40% che compra dai contenuti, gli 8 coordinatori → 4.000]
+> **Come applicarlo:** [il principio trasferibile che il lettore si porta a casa]
+
+Il "come applicarlo" è il takeaway embedded della tecnica #7. Regola: una leva è tale solo se distinta e dimostrabile — meglio 4 leve vere che 8 gonfiate. (Specifiche in `structure.md`, sezione 6. Esempio: `examples/weroad-mastella.md`, le 6 leve.)
+
+### 10. Modulo "flywheel"
+Quando esiste un loop auto-alimentante, mappalo partendo dal customer journey: cerca **il punto preciso in cui un'azione del cliente produce l'input che porta il cliente successivo**. Poi scrivilo come catena che si chiude su sé stessa:
+
+> "Più persone viaggiano → più materiale autentico → contenuti che funzionano organicamente → più trust → più viaggiatori → altro materiale."
+
+Se i loop sono più di uno, spiega come si rinforzano a vicenda. Puoi agganciare il loop al framework dei **growth loops** (cfr. tecnica #8 e skill `pm-go-to-market-growth-loops`) — solo se calza.
+
+**Gate (vincolante):** mappa il flywheel **solo se i fatti lo reggono**. Se l'azienda non ha un loop reale, ometti la sezione. Non costruire un ciclo forzato per avere il diagramma. (Specifiche in `structure.md`, sezione 7. Esempio: `examples/weroad-mastella.md`, i 2 flywheel.)
+
 ---
 
 ## Quando essere critici
@@ -183,3 +201,5 @@ Non tutti gli atti devono avere la stessa lunghezza. Il ritmo del pezzo rispetta
 - ❌ Non usare aggettivi valutativi non fondati ("sorprendente", "straordinario") senza dati a supporto
 - ❌ Non scrivere come se il lettore non conoscesse il settore: rispetta l'intelligenza del pubblico
 - ❌ Non essere pomposo o da guru: la profondità viene dai fatti, non dal tono
+- ❌ Non costruire un flywheel che i fatti non dimostrano pur di riempire la sezione: se il loop non è reale, si omette
+- ❌ Non gonfiare il numero di leve di crescita: due "leve" che sono la stessa cosa detta in due modi vanno accorpate

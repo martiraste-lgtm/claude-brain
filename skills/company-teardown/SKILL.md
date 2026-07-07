@@ -48,6 +48,7 @@ Fai massimo 5 domande, divise in tre blocchi:
 **Angolo editoriale:**
 - Che POV vuoi adottare? (neutro investigativo / ammirazione / critico / "cosa avrei fatto diversamente")
 - C'è qualcosa di non ovvio o contro-intuitivo sull'azienda che vuoi portare in primo piano?
+- Includo i moduli **leve di crescita** e **flywheel**? (default sì per le leve; il flywheel solo se i loop sono dimostrabili dai fatti, altrimenti lo salto — vedi gate in `references/structure.md`)
 
 **Sezione finanziaria:**
 - Includi l'analisi dei numeri (revenue, EBITDA, gross margin, unit economics, scenari)?
@@ -62,7 +63,9 @@ Proponi la struttura basata sulle risposte della Fase 2. Struttura default:
 3. **Atti cronologici** — da 4 a 8 atti con titolo + anni nel titolo (es. "ATTO 2 — Il network (2016–2019)"), ognuno con: narrative dei fatti chiave + interpretazione strategica del momento
 4. **[Opzionale] Facciamo i conti** — sezione separata con: assunzioni esplicite, 3 scenari con implicazioni pratiche
 5. **[Opzionale] Opportunità adiacenti** — mercati non esplorati ma accessibili con il network esistente
-6. **Closing synthesis** — ritorna alla domanda o paradosso dell'apertura, verdict, apertura verso il futuro
+6. **[Raccomandato] Le leve di crescita** — 4-8 leve di prodotto/marketing isolate e nominate, ognuna con cosa fa + perché funziona (con fatto/numero) + come applicarlo
+7. **[Raccomandato — con gate] Il/i flywheel** — i loop auto-alimentanti che spiegano la crescita. **Includere solo se dimostrabili dai fatti; altrimenti omettere** (mai inventare un loop)
+8. **Closing synthesis** — ritorna alla domanda o paradosso dell'apertura, verdict, apertura verso il futuro
 
 Attendi la conferma dell'utente prima di scrivere il draft.
 
@@ -114,6 +117,19 @@ Consulta `references/structure.md` per le specifiche di ogni sezione.
 5. Fase 5 — Revisione: 3 titoli + analisi
 
 **Result:** Articolo narrativo senza analisi finanziaria
+
+### Example 3: Teardown playbook con leve di crescita + flywheel
+
+**User says:** "fai il teardown di WeRoad — voglio capire come funziona il loro playbook di crescita"
+
+**Actions:**
+1. Fase 1 — Verifica: round di funding (pre-seed→Serie C), fatturato, numero coordinatori/viaggiatori, founding story → tabella ✅/⚠️/❌
+2. Fase 2 — Domande: format educational breakdown (playbook, non paradosso), POV ammirazione strutturata, leve di crescita SÌ, flywheel SÌ (loop contenuti + community dimostrabili dai fatti)
+3. Fase 3 — Outline: hook-domanda + sezioni tematiche (origini, modello) + **6 leve di crescita** con "come applicarlo" + **2 flywheel** + lezioni finali
+4. Fase 4 — Draft: ~6000+ parole, learnings embedded per sezione, stile playbook
+5. Fase 5 — Revisione: titoli + analisi
+
+**Result:** Teardown in stile educational breakdown con leve e flywheel espliciti — vedi `references/examples/weroad-mastella.md` come modello
 
 ---
 
