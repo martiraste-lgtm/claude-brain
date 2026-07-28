@@ -112,6 +112,59 @@ Il brand cresce quando "parla" al mercato piu di quanto la sua quota attuale giu
 
 ---
 
+## Lente complementare (POV, non evidenza): capitale culturale come fossato AI-proof
+
+Fonte: Ana Andjelic — "New New Rules of Brand Marketing". **Attenzione allo statuto:** è un POV, non
+un dato. Non ha la forza empirica di Pauwels (che è una regressione su 150+ brand): qui non c'è misura,
+c'è una tesi. Trattala come **lente diagnostica e sorgente di angle**, mai come regola confermata. La
+casa di Andjelic è la skill `brand-culture-b2c-analyst`: qui ne prendiamo solo la parte che spiega la
+*durabilità del vantaggio*, che è materia HSBG.
+
+### La tesi
+
+Un brand può competere su due piani. Sul **valore d'uso** (il prodotto fa il suo lavoro): lì è una
+commodity, e ciò che è commodity è copiabile. Oppure sul **capitale culturale** (gusto, status,
+identità, scarsità, opacità, innovazione estetica): lì il prodotto diventa il segno di un'appartenenza,
+e questo lo rende non intercambiabile, difende il prezzo e fidelizza.
+
+L'angolo nuovo e più utile nel 2026: il capitale culturale è **l'unico moat resistente all'AI.** L'AI
+copia in fretta tone of voice, estetica, brand code — cioè proprio lo strato su cui un brand "gradevole"
+si difende. Ma non copia il capitale culturale *accumulato*: storia, heritage, narrazioni, fandom. Sono
+il prodotto del tempo e di una comunità, non di un prompt.
+
+### Perché è materia HSBG (e non solo brand-culture)
+
+- **È il fondamento del fossato di significato.** Il costrutto *fossato di efficienza vs fossato di
+  significato* (coniato nel pezzo Poke House) è esattamente valore d'uso vs capitale culturale. Questa
+  lente dà il perché teorico a un concetto che la rubrica già usa.
+- **Spiega perché l'Identity Colonizer è il vettore più difendibile.** Nei 5 vettori l'Identity
+  Colonizer è dichiarato il più difendibile ma senza il meccanismo: il meccanismo è questo. "Un
+  incumbent non può copiare una tribù" e "un'AI non può copiare un fandom" sono la stessa legge.
+- **Estende la scadenza del fossato di efficienza all'era AI.** Se efficienza ed estetica sono sempre
+  più copiabili — anche in una settimana, anche da un'AI — l'unico vantaggio che non scade è il
+  significato accumulato. Per un piccolo che decide *dove* investire, è una lente su dove sta la
+  difendibilità vera.
+
+### Sparring: dove la tesi va sfidata
+
+- L'AI aiuta anche a **costruire** capitale culturale (contenuti, community management, scala della
+  narrazione). Non è solo una minaccia.
+- Il capitale culturale si può **fingere/astroturfare**; non tutto ciò che sembra fandom lo è.
+- Resta una **ipotesi direzionale**, non una legge misurata. Se un giorno la mettiamo alla prova con
+  dati, promuovila in `hypotheses/active.md`; per ora è una lente.
+
+### Come usarla
+
+- In **Modo C**, quando valuti se il vantaggio di un brand è durabile: chiediti se sta sul valore d'uso
+  (copiabile, AI incluso) o sul capitale culturale (difendibile). È la domanda che separa un fossato con
+  data di scadenza da uno senza.
+- Come **angle** per la rubrica: la tensione "efficienza copiabile vs significato non copiabile" è già
+  servita in Poke House. Resta **nel ragionamento**: nel corpo dell'articolo la lente non si cita per
+  nome (regola del framework invisibile). Per l'analisi culturale completa di un brand, rimanda a
+  `brand-culture-b2c-analyst`.
+
+---
+
 ## Come usare questa evidenza nella skill
 
 - Quando un brand dice "dobbiamo aumentare l'awareness", chiedi prima: "Su cosa ti differenzi?"

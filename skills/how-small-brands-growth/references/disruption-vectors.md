@@ -98,7 +98,7 @@ Il marketing model e strutturalmente diverso: ~70% dell'investimento marketing i
 
 **Come funziona:** Non migliora il prodotto. Non riduce il prezzo. Non aggiunge un benefit layer. Non crea una nuova occasione. Cambia cosa il prodotto significa per il consumatore — e facendolo, lo rende insostituibile per una tribu specifica in un modo che i vantaggi competitivi puramente funzionali non possono replicare.
 
-**Vantaggio competitivo:** Il piu difendibile dei cinque. L'identita culturale e il vantaggio piu difficile da replicare per un incumbent. Un incumbent puo copiare una formulazione. Non puo copiare una tribu. P&G non puo lanciare un brand di acqua heavy metal con alcuna credibilita.
+**Vantaggio competitivo:** Il piu difendibile dei cinque. L'identita culturale e il vantaggio piu difficile da replicare per un incumbent. Un incumbent puo copiare una formulazione. Non puo copiare una tribu. P&G non puo lanciare un brand di acqua heavy metal con alcuna credibilita. Il meccanismo sotto: questo vettore compete sul **capitale culturale** (narrazioni, fandom, heritage), non sul valore d'uso — ed e la ragione per cui e il piu difendibile anche rispetto all'AI, che copia estetica e brand code ma non il capitale culturale accumulato (vedi la lente in `differentiation-evidence.md`).
 
 **Principi che invertono la logica convenzionale del brand management:**
 
