@@ -1,8 +1,8 @@
 # Rubrica "How Small Brands Grow" — missione e struttura dell'articolo
 
 Guida editoriale per i pezzi della rubrica su **MarkeThings** (firma "Marketing Ignorante").
-Derivata da Graza (storia n.1, apr 2026) e Poppi (storia n.2, mag 2026), archiviati in
-`System-content-flywheel/articoli/HSBG-*.md`.
+Derivata da Graza (storia n.1, apr 2026) e Poppi (storia n.2, mag 2026); terzo pezzo archiviato Poke
+House (storia n.3, lug 2026). Tutti in `System-content-flywheel/articoli/HSBG-*.md`.
 
 ---
 
@@ -17,9 +17,12 @@ assistere a una lezione con i framework in cattedra.
 - **Benchmark strutturale: Graza** (`articoli/HSBG-Graza-*.md`). Prima di scrivere e prima di
   consegnare, rileggi Graza: quella è la densità, il ritmo, il livello di invisibilità del framework a
   cui tornare. Poppi è l'altro modello valido (più lungo, ma altrettanto pulito).
-- **Anti-esempio: Poke House** (storia n.3). È il pezzo che ha performato peggio. Ogni volta che stai
-  per fare qualcosa che Poke House ha fatto — citare autori per nome, ripetere lo stesso box, chiudere
-  ogni sezione con "Lezione:", coniare tre concetti — **fermati**: stai sbagliando.
+- **Anti-esempio: la prima stesura di Poke House** (poi riscritta). Era il pezzo venuto peggio. Ogni
+  volta che stai per fare quello che faceva — citare autori per nome, ripetere lo stesso box, chiudere
+  ogni sezione con "Lezione:", coniare tre concetti — **fermati**: stai sbagliando. (La versione
+  *archiviata* di Poke House, storia n.3, è invece un buon esempio per il **finale** e la struttura
+  narrativa; ma conserva hype/halo e alcune "Lezione:" per scelta editoriale di Stefano, quindi per
+  l'invisibilità del framework il benchmark resta Graza, non Poke House.)
 - **Il framework è invisibile nel testo pubblicato.** Vive solo in Fase A (l'analisi Modo C che non si
   pubblica). Nel corpo dell'articolo **non compare nessun nome di autore né di vettore** — né Kinner,
   né Pauwels, né lenti esterne (Andjelic, Bina e simili sono di un'altra skill: possono informare
@@ -30,8 +33,8 @@ assistere a una lezione con i framework in cattedra.
 
 Perché questa legge esiste: i primi due pezzi (Graza, Poppi) sono stati scritti *senza* uno schema, con
 il framework tenuto in background — e sono i migliori. Man mano che il framework è diventato visibile
-nel corpo (Goop, poi Poke House), la qualità è crollata. La tentazione da combattere è "mostrare il
-ragionamento". Non mostrarlo: raccontalo attraverso i fatti.
+nel corpo (Goop, poi la prima stesura di Poke House), la qualità è crollata. La tentazione da combattere
+è "mostrare il ragionamento". Non mostrarlo: raccontalo attraverso i fatti.
 
 ---
 
@@ -149,6 +152,7 @@ funziona meglio di tutti.
 | Controprova: brand in condizioni simili, esito opposto | esiste un caso comparabile e fallito (Goop → Blake Lively/Preserve) |
 | Un solo numero spiegato a fondo (Graza, il 7,91% di CR) | il lancio ha prodotto un dato forte e isolabile |
 | Scala anno per anno in una sezione "E poi?" a fine pezzo | la traiettoria è pubblica e vale come epilogo, fuori dall'analisi |
+| Finale che legge un bilancio reale: entità legale vs gruppo consolidato → scomposizione della perdita (cassa vs svalutazioni) → bivio strategico con 2-3 opzioni pro/contro, tenuto aperto | il brand ha bilanci pubblici e un numero che il lettore fraintenderebbe (Poke House: i 24M di perdita erano quasi tutte svalutazioni estere della capogruppo, non cassa bruciata dal core) |
 | Requisiti numerati del concetto coniato | il concetto è replicabile e vale la pena dare le condizioni perché funzioni |
 | Tabella prima/dopo | c'è una trasformazione secca da mostrare (il rebrand di Poppi) |
 
@@ -192,10 +196,12 @@ raccontato male quel caso, non c'è un mito da smontare: passa oltre.
 - Niente aggettivi di entusiasmo sul brand: il pezzo ammira la mossa, non il brand
 - Niente numeri non verificati, e mai confondere valutazione e fatturato
 
-### Anti-pattern — i difetti concreti del pezzo su Poke House (da non ripetere mai)
+### Anti-pattern — i difetti concreti della prima stesura di Poke House (da non ripetere mai)
 
-Poke House è la storia n.3, quella andata peggio. Ecco cosa ha fatto di sbagliato, con il segnale
-misurabile a fianco. Sono le cose da controllare a vista prima di consegnare.
+La **prima stesura** di Poke House (poi riscritta e archiviata come storia n.3) è la versione venuta
+peggio. Ecco cosa faceva di sbagliato, con il segnale misurabile a fianco. Sono le cose da controllare a
+vista prima di consegnare. (Nota: il file archiviato di Poke House NON contiene più questi difetti — è
+la stesura originale l'anti-esempio.)
 
 1. **Autori e framework citati per nome nel corpo.** Poke House nomina Andjelic, Bina, "Benefit
    Innovator", "hype vs halo", "unit of culture". Graza non nomina nessuno (il framework sta solo

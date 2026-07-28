@@ -162,9 +162,11 @@ usano per restare grandi.
 
 **Regola critica**: il framework non e la struttura del pezzo, e un personaggio del pezzo. Le 5
 domande diagnostiche non compaiono mai elencate nel testo pubblicato. **Benchmark: Graza** (rileggilo
-prima di scrivere e prima di consegnare). **Anti-esempio: Poke House** — non ripetere i suoi difetti:
-nomi di autore/vettore nel corpo, lo stesso box ripetuto, "Lezione:" a fine di ogni sezione, più di un
-concetto coniato, footer di lavoro in coda. La checklist Parte B del reference è il filtro finale.
+prima di scrivere e prima di consegnare). **Anti-esempio: la prima stesura di Poke House** (poi
+riscritta) — non ripetere i suoi difetti: nomi di autore/vettore nel corpo, lo stesso box ripetuto,
+"Lezione:" a fine di ogni sezione, più di un concetto coniato, footer di lavoro in coda. Il Poke House
+*archiviato* (storia n.3) è invece un buon esempio per il finale/struttura. La checklist Parte B del
+reference è il filtro finale.
 
 ## Step finale — Sparring interattivo
 
