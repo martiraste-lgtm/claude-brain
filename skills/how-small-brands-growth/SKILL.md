@@ -1,7 +1,7 @@
 ---
 name: how-small-brands-growth
-description: Diagnostica, valuta e analizza la strategia di crescita di brand piccoli/challenger in categorie consumer. Usa i 5 vettori di disruption (Kinner), il framework HSBG (startup/scale-up/maturity) e l'evidenza scientifica sulla differenziazione (Pauwels). Tre modalita - diagnosi vettore, valutazione esecuzione, analisi brand.
-trigger: "quale vettore di disruption", "come dovrei attaccare la categoria", "dove attaccare", "quale strategia per il mio brand", "disruption vector", "come attaccare la categoria", "analizza la crescita di", "valuta la mia strategia di crescita", "come dovrei scalare", "challenger brand", "small brand growth", "sto eseguendo bene", "siamo nella fase giusta", "le metriche sono giuste", "stiamo scalando bene", "che strategia sta usando", "reverse engineering della crescita", "how small brands grow"
+description: Diagnostica, valuta e analizza la strategia di crescita di brand piccoli/challenger in categorie consumer, e scrive gli articoli della rubrica "How Small Brands Grow". Usa i 5 vettori di disruption (Kinner), il framework HSBG (startup/scale-up/maturity) e l'evidenza scientifica sulla differenziazione (Pauwels). Quattro modalita - diagnosi vettore, valutazione esecuzione, analisi brand, articolo per la rubrica.
+trigger: "quale vettore di disruption", "come dovrei attaccare la categoria", "dove attaccare", "quale strategia per il mio brand", "disruption vector", "come attaccare la categoria", "analizza la crescita di", "valuta la mia strategia di crescita", "come dovrei scalare", "challenger brand", "small brand growth", "sto eseguendo bene", "siamo nella fase giusta", "le metriche sono giuste", "stiamo scalando bene", "che strategia sta usando", "reverse engineering della crescita", "how small brands grow", "scrivi il pezzo della rubrica", "articolo how small brands grow", "nuovo pezzo HSBG", "racconta le prime mosse di", "prossima storia della rubrica"
 license: MIT
 metadata:
   author: User
@@ -28,6 +28,7 @@ Aiuta a diagnosticare, valutare e analizzare la strategia di crescita di brand p
 - `growth-phases.md` — framework HSBG: value proposition → 4Ps → execution per fase
 - `differentiation-evidence.md` — il paper Pauwels come base scientifica
 - `case-studies.md` — case study organizzati per vettore
+- `rubrica-articolo.md` — missione e struttura degli articoli della rubrica "How Small Brands Grow" (serve nel Modo D)
 
 Questi file sono la tua knowledge base. Ogni analisi deve essere radicata in questi framework. Non inventare framework propri.
 
@@ -118,6 +119,52 @@ Scrivi sempre in italiano.
    - **Opportunita** — cosa potrebbe fare meglio o diversamente
 
 3. **Transizione a sparring**
+
+### Modo D — Articolo per la rubrica "How Small Brands Grow"
+
+**Quando**: si deve scrivere un pezzo della rubrica su MarkeThings. E' l'uso principale di questa skill.
+
+**Leggi `references/rubrica-articolo.md` prima di qualsiasi cosa.** Contiene la missione della rubrica,
+gli invarianti, la palette adattiva e la voce. Qui sotto solo il flusso.
+
+**Context scoping (obbligatorio):** per il Modo D carica SOLO le reference di questa skill
+(`how-small-brands-growth`). **Non** caricare `brand-culture-b2c-analyst` né altre skill: importare
+lenti esterne (Andjelic, Bina…) è la causa diretta del peggior pezzo della rubrica (Poke House). Il
+framework — di questa skill come di altre — resta invisibile nel testo pubblicato.
+
+**Cosa racconta la rubrica**: le prime mosse dei brand oggi noti — da dove e venuta l'idea, come e
+nato il prodotto, come sono arrivati i primi clienti, con quali soldi e su quali canali. Tesi
+permanente: le tattiche di un brand senza soldi sono un altro mestiere rispetto a quelle che i grandi
+usano per restare grandi.
+
+**Flusso:**
+
+1. **Materiali** — l'utente porta documenti, link, appunti sul brand. Se mancano fatti essenziali
+   (date, capitale, primi canali), chiedi o verifica con ricerca web.
+
+2. **Analisi interna (Modo C)** — non pubblicata, serve a chi scrive: vettore, fase, differenziazione,
+   esecuzione del playbook, rischio primario, case study di confronto.
+
+3. **Le domande in piu che la rubrica richiede:**
+   - le quattro domande della missione: idea, prodotto, primi clienti, mossa impossibile per un grande
+   - il **vuoto**: le due opzioni forzate della categoria prima di questo brand
+   - il **mito da smontare**, se esiste una narrazione popolare consolidata sul caso
+   - il **concetto da coniare**: cosa fa questo brand che non ha ancora un nome
+
+4. **Scelta dell'impianto** — cronologico, tematico, o dal mito. Dipende dalla storia del brand: le
+   regole di scelta sono in `rubrica-articolo.md`. Non forzare lo schema di un pezzo precedente.
+
+5. **Outline + human gate** — tesi in una frase, impianto scelto, mosse con le rispettive lezioni,
+   concetto coniato, elementi della palette che la storia autorizza, principi del Mega Recap, hook e
+   3 titoli alternativi. **Non scrivere l'articolo finche l'outline non e approvato.**
+
+6. **Bozza** sugli invarianti, con la voce della rubrica. Poi checklist finale del reference.
+
+**Regola critica**: il framework non e la struttura del pezzo, e un personaggio del pezzo. Le 5
+domande diagnostiche non compaiono mai elencate nel testo pubblicato. **Benchmark: Graza** (rileggilo
+prima di scrivere e prima di consegnare). **Anti-esempio: Poke House** — non ripetere i suoi difetti:
+nomi di autore/vettore nel corpo, lo stesso box ripetuto, "Lezione:" a fine di ogni sezione, più di un
+concetto coniato, footer di lavoro in coda. La checklist Parte B del reference è il filtro finale.
 
 ## Step finale — Sparring interattivo
 

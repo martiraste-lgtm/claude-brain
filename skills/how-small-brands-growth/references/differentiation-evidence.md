@@ -79,9 +79,43 @@ Queste aree suggeriscono che la differenziazione come misurata nel paper (percez
 
 ---
 
+## Evidenza complementare: ESOV (Excess Share of Voice)
+
+Fonte: Les Binet & Peter Field — "The Long and Short of It" (IPA, dati Ehrenberg-Bass / databank IPA). Meccanismo osservato su centinaia di campagne.
+
+### La regola
+
+**Share of Voice (SOV)** = la quota di "voce" del brand nella categoria (spesa media, presenza, attenzione) rispetto ai competitor.
+**Share of Market (SOM)** = la quota di mercato del brand.
+
+**ESOV = SOV − SOM.** Il segno di questa differenza predice la direzione della crescita:
+
+- Se **SOV > SOM** (ESOV positivo) → il brand tende a **guadagnare** market share nel tempo.
+- Se **SOV < SOM** (ESOV negativo) → il brand tende a **erodere** market share.
+- Regola empirica di calibrazione: ~10 punti di ESOV positivo corrispondono a circa +0.5 punti di market share all'anno (varia per categoria).
+
+Il brand cresce quando "parla" al mercato piu di quanto la sua quota attuale giustificherebbe. Sotto la propria quota, il default e il declino lento.
+
+### Perche conta per un brand piccolo/challenger
+
+1. **Il piccolo parte in svantaggio strutturale.** Per definizione un challenger ha SOM bassa, quindi anche una SOV modesta puo bastare a generare ESOV positivo. E la leva piu accessibile: non serve un budget da leader, serve un budget che superi la propria quota attuale.
+
+2. **ESOV senza differenziazione e spesa sprecata.** Questo e il ponte con Pauwels: la SOV amplifica una posizione, non la crea. Un ESOV positivo su un brand indistinto compra rumore, non penetrazione. Prima la differenziazione (arma primaria), poi l'ESOV per amplificarla.
+
+3. **Il meccanismo a valle e la mental availability.** L'ESOV positivo funziona perche costruisce e rinfresca la disponibilita mentale (le memory structure che fanno venire in mente il brand nel momento dell'acquisto). E lo stesso costrutto che il paper Pauwels indica come gap non misurato (vedi Limitazioni sopra): ESOV e uno dei modi in cui si espande la mental availability.
+
+### Come combinare con i 5 vettori
+
+- L'ESOV governa **quanto** amplificare; il vettore di disruption governa **cosa** amplificare.
+- Nelle fasi di scale-up (vedi growth-phases), un ESOV positivo sostenuto e cio che trasforma una differenziazione reale in quota di mercato conquistata.
+- Attenzione al lato lungo/corto: Binet & Field mostrano che l'attivazione a risposta diretta muove SOM nel breve ma non costruisce ESOV duraturo. La crescita di quota richiede anche investimento di brand building (~60/40 come punto di partenza, da adattare alla categoria).
+
+---
+
 ## Come usare questa evidenza nella skill
 
 - Quando un brand dice "dobbiamo aumentare l'awareness", chiedi prima: "Su cosa ti differenzi?"
 - Quando un brand dice "dobbiamo abbassare il prezzo", ricorda che il prezzo e la leva piu debole (0.11 vs 0.22)
 - Quando valuti un vettore, verifica sempre che la differenziazione sia reale e misurabile, non solo dichiarata
 - Usa i dati Pauwels per supportare raccomandazioni concrete, non come decorazione accademica
+- Quando un brand chiede "quanto devo investire in comunicazione?", ragiona in termini di ESOV: la SOV deve superare la SOM attuale per crescere. Ma verifica prima che ci sia una differenziazione reale da amplificare — ESOV su un brand indistinto e budget bruciato
