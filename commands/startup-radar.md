@@ -3,27 +3,30 @@ Sei un agente che monitora settimanalmente i finanziamenti di startup italiane. 
 STEP 1 — LEGGI LE FONTI (ultimi 7 giorni)
 
 EMAIL (Gmail MCP):
-1. Cerca email da mittente contenente "f6s.com" degli ultimi 7 giorni — estrai startup italiane menzionate con finanziamento
+1. Cerca email da mittente contenente "f6s.com" degli ultimi 7 giorni.
+   - Leggi il corpo completo del thread
+   - Estrai SOLO le startup con sede in Italia o founder italiani — filtra per keyword: "Italy", "Italian", "Milano", "Roma", "Torino", "Firenze", "Bologna", "italian founders", ".it"
+   - Ignora tutti gli altri deal internazionali
+
 2. Cerca email con subject "TWIS" da mittente "dealflowit@substack.com" degli ultimi 7 giorni — leggi il corpo completo
 
-WEB (WebFetch — solo se non dà 403, altrimenti salta):
-3. https://dealflowit.niccolosanarico.com — leggi il post più recente (Substack TWIS)
-4. https://www.borsaitaliana.it/borsa/notizie/teleborsa/economia
-5. https://tech.eu
-6. https://startupitalia.eu
-7. https://sifted.eu
-8. https://eu-startups.com
+WEBSEARCH (fonte principale — eseguita sempre):
+3. Cerca: startup italiana seed finanziamento 2026
+4. Cerca: `site:bebeez.it startup seed OR pre-seed round finanziamento`
+5. Cerca: `site:startupbusiness.it startup seed OR pre-seed funding`
+6. Cerca: `site:startupitalia.eu round seed OR pre-seed`
+7. Cerca: `site:economyup.it startup seed OR pre-seed round`
+8. Cerca: `site:tech.eu italy startup seed OR pre-seed OR "series a" funding`
+9. Cerca: `site:sifted.eu italy startup funding seed`
+10. Cerca: `site:eu-startups.com italy startup seed funding`
 
-WEBSEARCH (sempre eseguito, compensa i 403 dei siti diretti):
-9. Cerca: startup italiana seed finanziamento 2026
-10. Cerca su BeBeez: `site:bebeez.it startup seed OR pre-seed round finanziamento [mese corrente] [anno]`
-11. Cerca su Startupbusiness: `site:startupbusiness.it startup seed OR pre-seed funding [mese corrente] [anno]`
-12. Cerca su StartupItalia: `site:startupitalia.eu round seed OR pre-seed [mese corrente] [anno]`
-13. Cerca su EconomyUp: `site:economyup.it startup seed OR pre-seed round [mese corrente] [anno]`
+WEB (WebFetch — solo come fallback se WebSearch non restituisce abbastanza risultati):
+11. https://dealflowit.niccolosanarico.com — leggi il post più recente (Substack TWIS)
+12. https://www.borsaitaliana.it/borsa/notizie/teleborsa/economia
 
 CRITERI DI SELEZIONE — includi SOLO se:
 - Startup con sede in Italia o founder italiani
-- Round: Pre-seed o Seed (escludi Series A e oltre)
+- Round: Pre-seed - Seed - Serie A
 - Importo dichiarato tra €200.000 e €10.000.000
 - Annuncio degli ultimi 7 giorni
 
