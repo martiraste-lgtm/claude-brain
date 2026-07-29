@@ -460,9 +460,9 @@ Workflow: verifica attiva (WebSearch + WebFetch + Apify se necessario) → doman
 ---
 
 ### content-radar
-Radar settimanale per la content strategy del sistema content-flywheel: monitora i post LinkedIn recenti degli autori in watchlist (Voje, Dunford, Estner, Wester, Kaminski, Pierri, Herubel) via Chrome MCP + le conversazioni sui 5 temi core via web search, mappa tutto sui POV del sistema e produce un Google Doc con 5-8 angle prioritizzati per post e articoli.
+Radar bisettimanale per la content strategy del sistema content-flywheel: monitora i post LinkedIn recenti degli autori in watchlist (Voje, Dunford, Estner, Wester, Kaminski, Pierri, Herubel) via Chrome MCP + le conversazioni sui 5 temi core via web search, mappa tutto sui POV del sistema e produce un Google Doc con 5-8 angle prioritizzati per post e articoli.
 
-Trigger: "content radar", "radar settimanale", "lancia il radar", "cosa hanno pubblicato gli autori questa settimana". Cadenza: domenica ore 10 (cron di sessione auto-rinnovante, o lancio manuale).
+Trigger: "content radar", "radar bisettimanale", "lancia il radar", "cosa hanno pubblicato gli autori nelle ultime 2 settimane". Cadenza: ogni ~15 giorni (cron di sessione auto-rinnovante, o lancio manuale).
 
 Config (autori + temi): `references/watchlist.md` nella cartella skill. Richiede: repo `System-content-flywheel`, Chrome loggato su LinkedIn, connector Google Drive.
 

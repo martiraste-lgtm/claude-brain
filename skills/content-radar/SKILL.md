@@ -1,15 +1,15 @@
 ---
 name: content-radar
 description: >
-  Radar settimanale per la content strategy: monitora i post LinkedIn recenti degli autori di
+  Radar bisettimanale per la content strategy: monitora i post LinkedIn recenti degli autori di
   riferimento (watchlist) + le conversazioni sui temi core (posizionamento B2B, early stage, growth,
   product marketing, GTM), li mappa sui POV del sistema content-flywheel e produce un Google Doc
   con 5-8 angle prioritizzati per post e articoli. Usa quando l'utente dice "content radar",
-  "radar settimanale", "lancia il radar", "cosa hanno pubblicato gli autori questa settimana",
-  o quando il cron settimanale lo invoca. NON aggiorna la knowledge base: propone solo candidati.
+  "radar bisettimanale", "lancia il radar", "cosa hanno pubblicato gli autori nelle ultime 2 settimane",
+  o quando il cron bisettimanale lo invoca. NON aggiorna la knowledge base: propone solo candidati.
 ---
 
-# Content Radar — loop settimanale autori + temi
+# Content Radar — loop bisettimanale autori + temi
 
 Scopo: alimentare la produzione editoriale di Stefano (post LinkedIn + articoli Substack) con segnali
 freschi, già tradotti in angle collegati ai SUOI core argument. Non è rassegna stampa: ogni output
@@ -30,7 +30,8 @@ Modificare quella, non questo workflow.
    (5 tipi di contenuto, trigger), `audience.md` (buyer, convinzioni, lessico). Questi sono i core
    argument contro cui mappare TUTTO.
 3. Leggi `knowledge/hypotheses/active.md` (per la sezione "Segnali per la knowledge").
-4. Determina la settimana ISO corrente (`YYYY-Wxx`) e la finestra: ultimi 7 giorni.
+4. Determina la data del run (`YYYY-MM-DD`, chiave del ciclo) e la finestra: ultimi 15 giorni.
+   Come etichetta di periodo secondaria usa il range di settimane ISO coperte (`Wxx–Wxx+1`).
 5. Leggi `references/watchlist.md` di questa skill: lista autori + temi + query.
 
 ## Fase 1 — Radar autori (Chrome MCP)
@@ -39,7 +40,7 @@ Per ogni autore della watchlist:
 
 1. Naviga `https://www.linkedin.com/in/[handle]/recent-activity/all/` con Chrome MCP
    (browser dell'utente, già loggato).
-2. Estrai i post degli **ultimi 7 giorni**: hook (testo prima del "…altro"), corpo se rilevante,
+2. Estrai i post degli **ultimi 15 giorni**: hook (testo prima del "…altro"), corpo se rilevante,
    formato (testo / carosello / immagine / video), tema trattato, engagement se visibile
    (reactions, commenti).
 3. **Regole anti-rumore:** max 3-4 post rilevanti per autore · skip repost senza commento,
@@ -50,7 +51,7 @@ Per ogni autore della watchlist:
 
 ## Fase 2 — Radar temi (WebSearch)
 
-Per ognuno dei temi della watchlist: 1-2 ricerche mirate su cosa è uscito negli **ultimi 7-10 giorni**
+Per ognuno dei temi della watchlist: 1-2 ricerche mirate su cosa è uscito negli **ultimi 15 giorni**
 (newsletter di settore, ricerche/report con dati, dibattiti, take contrarian). Usa le query suggerite
 nella watchlist come base, adattandole all'attualità.
 
@@ -73,7 +74,7 @@ Poi produci **5-8 angle prioritizzati** (mai di più — la scarsità è il valo
 
 1. **Titolo/hook proposto** (in italiano, nella voce di Stefano: diretto, specifico, mai guru)
 2. **Formato consigliato**: post LinkedIn / articolo Substack / infografica / combinazione hub&spoke
-3. **Perché ora**: il segnale che lo rende attuale questa settimana
+3. **Perché ora**: il segnale che lo rende attuale in questo ciclo
 4. **Le 3 coordinate** (POV · tipo · trigger)
 5. **Fonte**: link al post dell'autore o alla risorsa
 
@@ -82,12 +83,12 @@ forte, (c) coprono tipi di contenuto diversi tra loro (variety dentro LinkedIn).
 
 ## Fase 4 — Report su Google Doc
 
-Crea un Google Doc via Google Drive MCP, titolo: `Content Radar — Settimana [YYYY-Wxx]`.
+Crea un Google Doc via Google Drive MCP, titolo: `Content Radar — Ciclo [YYYY-MM-DD] (Wxx–Wxx+1)`.
 (Cartella di destinazione: se l'utente ne ha indicata una, usala; altrimenti root di Drive.)
 
 Struttura fissa del Doc (in italiano):
 
-1. **Executive summary** — 3 righe: il tema della settimana, l'angle più forte, cosa ignorare.
+1. **Executive summary** — 3 righe: il tema del ciclo, l'angle più forte, cosa ignorare.
 2. **Cosa hanno detto gli autori** — per autore: temi trattati + il post più notevole con perché.
 3. **Cosa gira sui temi core** — segnali dalle ricerche, con fonte.
 4. **Gli angle pronti per te (5-8, prioritizzati)** — il cuore, formato della Fase 3.
@@ -99,17 +100,18 @@ Struttura fissa del Doc (in italiano):
 ## Fase 5 — Log, push e rinnovo del loop
 
 1. Aggiungi una riga a `radar/log.md` nel repo progetto:
-   `| [data] | [YYYY-Wxx] | [link al Doc] | [sintesi in 1 riga] |`
-2. Commit + push: `chore: content radar — settimana [YYYY-Wxx]` (autorizzato dal CLAUDE.md di progetto).
-3. **Rinnova il loop:** registra con CronCreate un job **one-shot** (`recurring: false`) per la
-   **domenica successiva alle 10:00** (cron: `0 10 [giorno] [mese] *`), con prompt:
-   `Esegui la skill content-radar nella directory c:\Users\Utente\Documents\System-content-flywheel (run settimanale automatico).`
-   Se il tool CronCreate non è disponibile nella sessione, caricalo con ToolSearch.
-   **Limite noto (essere trasparenti con l'utente):** i cron sono session-only — il rinnovo vale
-   solo finché questa sessione di Claude Code resta aperta. Se la sessione si chiude, il fallback
-   è il lancio manuale `/content-radar` la domenica (vedi watchlist, "Setup del loop").
-4. Chiudi riportando all'utente: link al Doc, i 3 angle top in una riga ciascuno, e conferma del
-   rinnovo del cron.
+   `| [data run YYYY-MM-DD] | [Wxx–Wxx+1] | [link al Doc] | [sintesi in 1 riga] |`
+2. Commit + push: `chore: content radar — ciclo [YYYY-MM-DD]` (autorizzato dal CLAUDE.md di progetto).
+3. **Trigger durevole (primario):** è lo **scheduled task Windows `Content Radar`** (domenica
+   alterna 10:00, `StartWhenAvailable`) che lancia `scripts/launch-content-radar.ps1` — sopravvive
+   alla chiusura di Claude Code. Non serve fare nulla qui per rinnovarlo: il task ricorre da solo.
+   **Fallback (solo se il task NON è installato):** registra con CronCreate un job **one-shot**
+   (`recurring: false`) per **15 giorni dopo la data del run, alle 10:00** (cron: `0 10 [giorno] [mese] *`),
+   prompt: `Esegui la skill content-radar nella directory c:\Users\Utente\Documents\System-content-flywheel (run bisettimanale automatico).`
+   Se CronCreate non è disponibile, caricalo con ToolSearch. Nota: i cron sono session-only — valgono
+   solo finché la sessione resta aperta; per questo il meccanismo primario è lo scheduled task OS.
+4. Chiudi riportando all'utente: link al Doc, i 3 angle top in una riga ciascuno, e conferma che il
+   prossimo run è già coperto dallo scheduled task `Content Radar` (o dal cron di fallback).
 
 ---
 
@@ -124,7 +126,7 @@ Struttura fissa del Doc (in italiano):
 ## Troubleshooting
 
 - **LinkedIn chiede login / blocca:** avvisa l'utente e prosegui con gli autori raggiungibili +
-  WebSearch come fallback parziale ("[autore] LinkedIn post [tema] this week").
+  WebSearch come fallback parziale ("[autore] LinkedIn post [tema] last 2 weeks").
 - **Google Drive MCP non disponibile:** salva il report come `radar/[YYYY-Wxx]-content-radar.md`
   nel repo progetto (fallback), segnala il mancato Doc.
-- **Run manuale a metà settimana:** la finestra resta "ultimi 7 giorni" dal giorno del run.
+- **Run manuale fuori cadenza:** la finestra resta "ultimi 15 giorni" dal giorno del run.
