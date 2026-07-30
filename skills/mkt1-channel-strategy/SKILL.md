@@ -16,6 +16,8 @@ Come afferma MKT1: "Approccio al growth strategy come costruire una squadra di b
 Prerequisiti: `mkt1_company_overview` + `mkt1_marketing_advantages`.
 Output: aggiorna `_methodology/signals/signal-routing.md` e orienta la configurazione di `clients/[nome]/outbound/sequences/`.
 
+**A monte** — se non è ancora chiaro in quale quadrante l'azienda gioca davvero (domanda esistente/latente × superficie tua/in prestito), passa prima da `inbound-how-to-start-albanese`: quella skill decide quadrante e sequenza su 2-4 trimestri, questa decide l'engine e il mix operativo dentro il quadrante scelto. La tabella ACV più sotto è riconciliata con i suoi tre percorsi.
+
 ---
 
 ## I 6 Growth Engine

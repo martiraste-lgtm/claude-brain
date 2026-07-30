@@ -248,6 +248,25 @@ File di riferimento: `campaign-benchmarks.md` nella cartella della skill (benchm
 
 ---
 
+### inbound-how-to-start-albanese
+Per impostare o diagnosticare un programma inbound con la mappa delle quattro superfici (domanda esistente/latente × superficie tua/in prestito), usa la skill `inbound-how-to-start-albanese`.
+
+Trigger: "dobbiamo lavorare sull'inbound", "come imposto l'inbound", "l'inbound non porta risultati", "il blog non genera lead", "da dove nascono le nostre richieste", "in che quadrante siamo", "test delle venti richieste", "quanto investo in brand e quanto in attivazione".
+
+Workflow in 7 step: inquadramento → le due domande (domanda esistente vs latente, superficie tua vs in prestito) → posizionamento sulla matrice → test delle venti richieste (profilo Roulette / Cacciatore / Affittuario) → sequenza dei quadranti per ticket e durata del ciclo → patto di misurazione (data di giudizio + metrica anticipata e ritardata) → documento di output.
+
+Copre anche i canali **non digitali** (fiere, consorzi e albi, showroom, open house, direct mail, associazioni di categoria): è l'unica skill del sistema che lo fa, utile sul segmento PMI e industria.
+
+File di riferimento nella cartella della skill: `quattro-superfici.md`, `test-venti-richieste.md`, `sequenze-e-allocazione.md`, `evidenze.md` (ogni dato con fonte e perimetro di validità), `failure-modes-e-misurazione.md`, `casi.md`.
+
+**Differenza da `mkt1-channel-strategy`:** questa decide il quadrante e la sequenza su 2-4 trimestri; `mkt1-channel-strategy` decide l'engine e il mix operativo dentro il quadrante scelto. Prima la mappa, poi i canali. Le due tabelle ACV sono riconciliate.
+
+Framework: Albanese (Build with Cez) — provenienza dichiarata in fondo al SKILL.md. Uso interno e su clienti libero; se diventa contenuto pubblico, citare la fonte.
+
+**Non usare** per brief di singola campagna con budget (usa demand-gen-campaign-brief), asset per anchor (usa positioning-framework-estner), audit tecnico per crawler LLM (usa `mkt1_aeo_audit`), o SEO operativa — keyword research, SEO tecnica, cluster (usa la skill Learnn `impostare-strategia-seo`).
+
+---
+
 ### strategic-advisor
 Sparring partner strategico esperto di strategia aziendale, organizzazione e business. Applica framework di Patel (Permission to Play, Six-Part, Storytelling) e Martin (Strategy Cascade, Reverse Engineering).
 
