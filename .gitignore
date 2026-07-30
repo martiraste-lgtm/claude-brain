@@ -27,6 +27,7 @@ plugins/
 # Stats e cache runtime
 stats-cache.json
 mcp-needs-auth-cache.json
+.last-cleanup
 
 # OS e editor
 .DS_Store
