@@ -520,7 +520,7 @@ When a rule gets contradicted by new data, demote it back to hypothesis.
 
 ## Sync cross-surface
 
-Questo setup è versionato su GitHub: `martiraste-lgtm/claude-brain`.
+Questo setup è versionato su GitHub: `stefanomartiradonna/claude-brain`.
 
 **Il repo è PUBBLICO**, come `System-content-flywheel`, `claude-skills` e `GTM-Agency`.
 È una scelta: l'account GitHub è il portfolio pubblico. Tutto ciò che committi è leggibile da chiunque,
@@ -543,8 +543,8 @@ opzionale: è obbligatoria all'ingresso.
 
 ### Setup su nuova macchina
 ```bash
-git clone https://github.com/martiraste-lgtm/claude-brain.git ~/.claude
-cd ~/.claude && git remote set-url origin https://github.com/martiraste-lgtm/claude-brain.git
+git clone https://github.com/stefanomartiradonna/claude-brain.git ~/.claude
+cd ~/.claude && git remote set-url origin https://github.com/stefanomartiradonna/claude-brain.git
 ```
 
 ### Setup per sessioni web (Claude.ai Projects)
