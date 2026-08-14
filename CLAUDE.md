@@ -56,6 +56,7 @@ Senior su strategia e execution. Ma ho sempre bisogno di **confronto approfondit
 - **Analisi**: approfondite e strutturate con sezioni, paragrafi, argomenti e sotto-argomenti. Mai superficiali, a meno che io chieda esplicitamente qualcosa di breve.
 - **Deliverable**: segui il formato della skill specifica.
 - **Risposte brevi**: solo quando la domanda e semplice o io lo chiedo.
+- **Mai il trattino medio (em-dash, —).** Né in chat né in nessun deliverable scritto. Usa virgole, punti, due punti, o frasi separate.
 
 ### Contesto variabile
 Lavoro con aziende diverse, in contesti diversi, in fasi diverse, con prodotti diversi. **Non creare regole fisse su quale skill usare o come applicare i framework** — lo specifico io ogni volta. Chiedi contesto se non lo hai.
@@ -519,10 +520,26 @@ When a rule gets contradicted by new data, demote it back to hypothesis.
 
 ## Sync cross-surface
 
-Questo setup è versionato su GitHub: `martiraste-lgtm/claude-brain` (privato).
+Questo setup è versionato su GitHub: `martiraste-lgtm/claude-brain`.
+
+**Il repo è PUBBLICO**, come `System-content-flywheel`, `claude-skills` e `GTM-Agency`.
+È una scelta: l'account GitHub è il portfolio pubblico. Tutto ciò che committi è leggibile da chiunque,
+inclusi clienti, prospect e recruiter.
 
 Il repo contiene: `CLAUDE.md`, `settings.json`, `commands/`, `memory/`, `skills/`.
 Non contiene mai: `.credentials.json`, `history.jsonl`, `projects/`, cache, sessioni.
+
+### Regola di pubblicazione (vale per tutti i repo pubblici)
+
+Non committare mai, in nessun repo:
+- CV, cover letter, candidature e ogni materiale di ricerca lavoro
+- Materiale cliente non anonimizzato: nomi persona, brand, dati, documenti interni
+- Importi, listini, tariffe orarie, margini, fatturati (miei o dei clienti)
+- Credenziali, token, API key, export di sessione
+- Bozze di contenuti che non vuoi anticipare prima della pubblicazione
+
+Nel dubbio, chiedi prima di committare. L'anonimizzazione dei dati cliente non è una precauzione
+opzionale: è obbligatoria all'ingresso.
 
 ### Setup su nuova macchina
 ```bash
