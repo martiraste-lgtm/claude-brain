@@ -34,12 +34,26 @@ Modificare quella, non questo workflow.
    Come etichetta di periodo secondaria usa il range di settimane ISO coperte (`Wxx–Wxx+1`).
 5. Leggi `references/watchlist.md` di questa skill: lista autori + temi + query.
 
-## Fase 1 — Radar autori (Chrome MCP)
+## Fase 1 — Radar autori (chrome-devtools-mcp)
+
+**Canale browser obbligatorio: `chrome-devtools-mcp`.** Si attacca al Chrome dell'utente già aperto
+e già loggato su LinkedIn (`--autoConnect`). Tool da usare, in quest'ordine:
+
+- `mcp__chrome-devtools-mcp__list_pages` — verifica che il browser risponda e vedi i tab aperti
+- `mcp__chrome-devtools-mcp__navigate_page` — apri il profilo dell'autore
+- `mcp__chrome-devtools-mcp__take_snapshot` — leggi i post dall'albero di accessibilità
+
+Se i tool non sono già caricati, prendili con ToolSearch:
+`select:mcp__chrome-devtools-mcp__list_pages,mcp__chrome-devtools-mcp__navigate_page,mcp__chrome-devtools-mcp__take_snapshot`
+
+**NON usare la skill `claude-in-chrome` né i tool `mcp__claude-in-chrome__*`.** È un canale diverso,
+richiede l'estensione Chrome di claude.ai che su questa macchina non è installata: la navigazione va
+in timeout dopo ~2 minuti con "Browser extension is not connected" e il run si ferma. Non è un
+problema di Chrome né del login LinkedIn. È già successo il 2026-08-03 e il 2026-08-17.
 
 Per ogni autore della watchlist:
 
-1. Naviga `https://www.linkedin.com/in/[handle]/recent-activity/all/` con Chrome MCP
-   (browser dell'utente, già loggato).
+1. Naviga `https://www.linkedin.com/in/[handle]/recent-activity/all/` con `navigate_page`.
 2. Estrai i post degli **ultimi 15 giorni**: hook (testo prima del "…altro"), corpo se rilevante,
    formato (testo / carosello / immagine / video), tema trattato, engagement se visibile
    (reactions, commenti).
@@ -125,6 +139,11 @@ Struttura fissa del Doc (in italiano):
 
 ## Troubleshooting
 
+- **"Browser extension is not connected" / "Claude browser connector":** stai usando il canale
+  sbagliato. Quel messaggio arriva da `claude-in-chrome`, non da `chrome-devtools-mcp`. Non mandare
+  l'utente a installare estensioni: passa a `mcp__chrome-devtools-mcp__list_pages` e prosegui.
+- **`chrome-devtools-mcp` non risponde davvero** (`list_pages` fallisce): verifica con
+  `claude mcp list` che risulti Connected. Se non lo è, avvisa l'utente e passa al fallback WebSearch.
 - **LinkedIn chiede login / blocca:** avvisa l'utente e prosegui con gli autori raggiungibili +
   WebSearch come fallback parziale ("[autore] LinkedIn post [tema] last 2 weeks").
 - **Google Drive MCP non disponibile:** salva il report come `radar/[YYYY-Wxx]-content-radar.md`
