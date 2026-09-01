@@ -15,19 +15,19 @@ Guida interattiva per creare Agent Skills professionali per Claude. Ti accompagn
 
 ## Overview
 
-Questa skill ti aiuta a trasformare qualsiasi workflow ripetibile in una Agent Skill ben strutturata. Il processo è conversazionale: faccio domande, raccolgo informazioni, e solo dopo creo i file.
+Questa skill ti aiuta a trasformare qualsiasi workflow ripetibile in una Agent Skill ben strutturata.
 
-**Non creo mai una skill senza aver completato la fase Discovery.**
+**Prima di creare i file mi servono tre cose:** che risultato deve produrre la skill, come si capisce che è venuto bene, e con quali frasi va invocata. Se le hai già date nel messaggio, passo direttamente al design senza intervistarti.
 
 ---
 
 ## Instructions
 
-### Fase 1: Discovery (Obbligatoria)
+### Fase 1: Discovery
 
-Quando l'utente chiede di creare una skill, DEVO raccogliere queste informazioni attraverso domande conversazionali:
+Queste sono le informazioni che servono. **Estrai dal contesto quelle che l'utente ha già dato, chiedi solo i buchi che impediscono di procedere.** Le prime tre sono quelle senza cui il design è una scommessa; le altre spesso si deducono dal materiale o si decidono in fase di design.
 
-#### Domande da Porre
+#### Informazioni necessarie
 
 **Blocco 1 - Obiettivo e Contesto**
 1. Qual è l'obiettivo principale? Cosa vuoi ottenere con questa skill?
@@ -55,10 +55,10 @@ Quando l'utente chiede di creare una skill, DEVO raccogliere queste informazioni
 
 #### Regole per la Discovery
 
-- Fai le domande in modo conversazionale, non come un questionario
+- Fai le domande in modo conversazionale, non come un questionario, e raggruppale invece di farne una per turno
 - Se l'utente è vago, chiedi esempi concreti
 - Se l'utente ha già le idee chiare, non forzare tutte le domande
-- Riassumi sempre quello che hai capito prima di procedere
+- Riassumi quello che hai capito prima di procedere, così l'utente corregge invece di ripetere
 
 ---
 
@@ -81,10 +81,10 @@ Dopo la Discovery, presento una proposta di design strutturata:
 ### Pattern Identificati
 [Quali pattern dalla guida applicheremo]
 
-### Confermi? Vuoi modificare qualcosa?
+### Cosa cambieresti?
 ```
 
-**Non procedo all'implementazione senza conferma esplicita.**
+Presento il design e procedo. Mi fermo ad aspettare solo se c'è un bivio vero, dove la risposta cambia cosa costruisco. I file sono facili da rifare: un giro di conferma su ogni skill costa più di una riscrittura.
 
 ---
 
@@ -92,7 +92,9 @@ Dopo la Discovery, presento una proposta di design strutturata:
 
 Dopo la conferma, creo i file seguendo queste regole:
 
-#### SKILL.md - Struttura Obbligatoria
+#### Frontmatter: questo sì è obbligatorio
+
+Se il YAML non parsa, Claude Code scarta **tutto** il frontmatter senza avvisare: il nome ripiega sul nome della cartella e la description sulla prima riga del corpo. La skill resta caricata ma non si attiva più sui trigger giusti.
 
 ```yaml
 ---
@@ -105,11 +107,31 @@ metadata:
 ---
 ```
 
-Seguito da:
+Attenzione a un errore che si vede spesso: una lista scritta su una riga sola (`trigger: "a", "b", "c"`) è YAML invalido. Va scritta come lista vera, un elemento per riga con il trattino.
+
+#### Corpo: come scriverlo
+
+Le sezioni sotto sono una convenzione utile, non un obbligo. Adattale alla skill.
+
 - `## Overview` - 1-2 frasi sullo scopo
-- `## Instructions` - Step numerati, chiari, actionable
-- `## Examples` - Minimo 1-2 scenari completi
-- `## Troubleshooting` - Errori comuni e soluzioni
+- `## Instructions` - vedi sotto, è la parte dove si sbaglia di più
+- `## Examples` - 1-2 scenari completi
+- `## Troubleshooting` - errori comuni e soluzioni
+
+**Come scrivere le Instructions.** Dichiara l'obiettivo e il criterio di qualità, poi dai euristiche condizionali ("se X, allora considera Y"). Usa step numerati **solo quando l'ordine è causalmente necessario**, cioè quando l'output di uno è l'input del successivo. Una sequenza numerata su un compito di giudizio produce un questionario, non un ragionamento.
+
+Distingui tre cose, perché si confondono:
+
+| Cosa | Quanto vincolare | Esempio |
+|------|------------------|---------|
+| Il **metodo** con cui Claude lavora | Poco. Obiettivo e paletti, non procedura | "guarda la pagina e dimmi cosa non va" batte 12 step numerati |
+| Il **deliverable** che esce | Molto, se deve essere confrontabile o è uno standard di casa | Una rubrica di valutazione, un preventivo, un template di brief |
+| Le **operazioni fragili** | Molto, alla lettera | Comandi distruttivi, chiamate API con effetti, sequenze di auth |
+
+Altri due errori ricorrenti:
+
+- **Numeri spacciati per legge.** "Genera sempre 3-5 varianti", "esattamente 15-24 slide", "massimo 5 domande". Se il numero è un'euristica, scrivilo come euristica: "3 è il default, 2 se il messaggio è mono-argomento".
+- **Caricare tutti i reference all'inizio.** Scrivi invece quale file serve quando. Un utente che chiede solo un hook non deve pagare la lettura di sei file.
 
 #### Regole Critiche
 
@@ -138,6 +160,7 @@ Struttura
 
 Frontmatter
 [ ] Delimitatori --- presenti
+[ ] Il blocco YAML parsa (liste come liste vere, non su una riga sola)
 [ ] Campo name in kebab-case
 [ ] Campo description completo (COSA + QUANDO + trigger)
 [ ] Nessun tag XML (< >)
@@ -145,7 +168,10 @@ Frontmatter
 
 Contenuto
 [ ] Overview presente e chiaro
-[ ] Instructions con step numerati
+[ ] Instructions con obiettivo e criterio di qualità dichiarati
+[ ] Step numerati solo dove l'ordine è causalmente necessario
+[ ] I numeri (quante varianti, quante domande) sono euristiche, non regole
+[ ] I reference si caricano quando servono, non tutti all'inizio
 [ ] Almeno 1-2 esempi concreti
 [ ] Sezione Troubleshooting presente
 ```
