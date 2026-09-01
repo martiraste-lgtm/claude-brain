@@ -1,7 +1,30 @@
 ---
 name: how-small-brands-growth
 description: Diagnostica, valuta e analizza la strategia di crescita di brand piccoli/challenger in categorie consumer, e scrive gli articoli della rubrica "How Small Brands Grow". Usa i 5 vettori di disruption (Kinner), il framework HSBG (startup/scale-up/maturity) e l'evidenza scientifica sulla differenziazione (Pauwels). Quattro modalita - diagnosi vettore, valutazione esecuzione, analisi brand, articolo per la rubrica.
-trigger: "quale vettore di disruption", "come dovrei attaccare la categoria", "dove attaccare", "quale strategia per il mio brand", "disruption vector", "come attaccare la categoria", "analizza la crescita di", "valuta la mia strategia di crescita", "come dovrei scalare", "challenger brand", "small brand growth", "sto eseguendo bene", "siamo nella fase giusta", "le metriche sono giuste", "stiamo scalando bene", "che strategia sta usando", "reverse engineering della crescita", "how small brands grow", "scrivi il pezzo della rubrica", "articolo how small brands grow", "nuovo pezzo HSBG", "racconta le prime mosse di", "prossima storia della rubrica"
+trigger:
+  - "quale vettore di disruption"
+  - "come dovrei attaccare la categoria"
+  - "dove attaccare"
+  - "quale strategia per il mio brand"
+  - "disruption vector"
+  - "come attaccare la categoria"
+  - "analizza la crescita di"
+  - "valuta la mia strategia di crescita"
+  - "come dovrei scalare"
+  - "challenger brand"
+  - "small brand growth"
+  - "sto eseguendo bene"
+  - "siamo nella fase giusta"
+  - "le metriche sono giuste"
+  - "stiamo scalando bene"
+  - "che strategia sta usando"
+  - "reverse engineering della crescita"
+  - "how small brands grow"
+  - "scrivi il pezzo della rubrica"
+  - "articolo how small brands grow"
+  - "nuovo pezzo HSBG"
+  - "racconta le prime mosse di"
+  - "prossima storia della rubrica"
 license: MIT
 metadata:
   author: User

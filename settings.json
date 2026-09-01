@@ -1,5 +1,6 @@
 {
   "permissions": {
+    "defaultMode": "auto",
     "allow": [
       "mcp__apify__call-actor",
       "mcp__claude_ai_Google_Drive__create_file",
@@ -10,6 +11,7 @@
       "mcp__chrome-devtools-mcp__navigate_page"
     ]
   },
+  "model": "opus",
   "hooks": {
     "PreToolUse": [
       {
@@ -37,6 +39,71 @@
     }
   },
   "autoUpdatesChannel": "latest",
+  "agentPushNotifEnabled": true,
   "effortLevel": "max",
-  "model": "opus"
+  "skillOverrides": {
+    "pm-data-analytics-ab-test-analysis": "off",
+    "pm-data-analytics-cohort-analysis": "off",
+    "pm-data-analytics-sql-queries": "off",
+    "pm-execution-brainstorm-okrs": "off",
+    "pm-execution-create-prd": "off",
+    "pm-execution-dummy-dataset": "off",
+    "pm-execution-job-stories": "off",
+    "pm-execution-outcome-roadmap": "off",
+    "pm-execution-pre-mortem": "off",
+    "pm-execution-prioritization-frameworks": "off",
+    "pm-execution-release-notes": "off",
+    "pm-execution-retro": "off",
+    "pm-execution-sprint-plan": "off",
+    "pm-execution-stakeholder-map": "off",
+    "pm-execution-summarize-meeting": "off",
+    "pm-execution-test-scenarios": "off",
+    "pm-execution-user-stories": "off",
+    "pm-execution-wwas": "off",
+    "pm-go-to-market-beachhead-segment": "off",
+    "pm-go-to-market-competitive-battlecard": "off",
+    "pm-go-to-market-growth-loops": "off",
+    "pm-go-to-market-gtm-motions": "off",
+    "pm-go-to-market-gtm-strategy": "off",
+    "pm-market-research-competitor-analysis": "off",
+    "pm-market-research-customer-journey-map": "off",
+    "pm-market-research-market-segments": "off",
+    "pm-market-research-market-sizing": "off",
+    "pm-market-research-sentiment-analysis": "off",
+    "pm-market-research-user-personas": "off",
+    "pm-market-research-user-segmentation": "off",
+    "pm-marketing-growth-marketing-ideas": "off",
+    "pm-marketing-growth-north-star-metric": "off",
+    "pm-marketing-growth-positioning-ideas": "off",
+    "pm-marketing-growth-product-name": "off",
+    "pm-marketing-growth-value-prop-statements": "off",
+    "pm-product-discovery-analyze-feature-requests": "off",
+    "pm-product-discovery-brainstorm-experiments-existing": "off",
+    "pm-product-discovery-brainstorm-experiments-new": "off",
+    "pm-product-discovery-brainstorm-ideas-existing": "off",
+    "pm-product-discovery-brainstorm-ideas-new": "off",
+    "pm-product-discovery-identify-assumptions-existing": "off",
+    "pm-product-discovery-identify-assumptions-new": "off",
+    "pm-product-discovery-metrics-dashboard": "off",
+    "pm-product-discovery-opportunity-solution-tree": "off",
+    "pm-product-discovery-prioritize-assumptions": "off",
+    "pm-product-discovery-prioritize-features": "off",
+    "pm-product-discovery-summarize-interview": "off",
+    "pm-product-strategy-ansoff-matrix": "off",
+    "pm-product-strategy-business-model": "off",
+    "pm-product-strategy-lean-canvas": "off",
+    "pm-product-strategy-monetization-strategy": "off",
+    "pm-product-strategy-pestle-analysis": "off",
+    "pm-product-strategy-porters-five-forces": "off",
+    "pm-product-strategy-pricing-strategy": "off",
+    "pm-product-strategy-product-strategy": "off",
+    "pm-product-strategy-product-vision": "off",
+    "pm-product-strategy-startup-canvas": "off",
+    "pm-product-strategy-swot-analysis": "off",
+    "pm-product-strategy-value-proposition": "off",
+    "pm-toolkit-draft-nda": "off",
+    "pm-toolkit-grammar-check": "off",
+    "pm-toolkit-privacy-policy": "off",
+    "pm-toolkit-review-resume": "off"
+  }
 }

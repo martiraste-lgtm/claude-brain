@@ -479,19 +479,6 @@ Workflow: verifica attiva (WebSearch + WebFetch + Apify se necessario) → doman
 
 ---
 
-### content-radar
-Radar bisettimanale per la content strategy del sistema content-flywheel: monitora i post LinkedIn recenti degli autori in watchlist (Voje, Dunford, Estner, Wester, Kaminski, Pierri, Herubel) via Chrome MCP + le conversazioni sui 5 temi core via web search, mappa tutto sui POV del sistema e produce un Google Doc con 5-8 angle prioritizzati per post e articoli.
-
-Trigger: "content radar", "radar bisettimanale", "lancia il radar", "cosa hanno pubblicato gli autori nelle ultime 2 settimane". Cadenza: ogni ~15 giorni (cron di sessione auto-rinnovante, o lancio manuale).
-
-Config (autori + temi): `references/watchlist.md` nella cartella skill. Richiede: repo `System-content-flywheel`, Chrome loggato su LinkedIn, connector Google Drive.
-
-**Regola:** propone candidati per la knowledge (pattern, evidenze per le ipotesi) ma NON aggiorna mai `knowledge/` in automatico — decide Stefano. Committa solo `radar/log.md` nel repo progetto.
-
-**Non usare** per l'analisi profonda one-shot di un autore (usa il Learning Mode del progetto content-flywheel con Chrome MCP).
-
----
-
 ## Come Aggiungere Nuove Skills
 
 1. Crea cartella in `~/.claude/skills/nome-skill/`

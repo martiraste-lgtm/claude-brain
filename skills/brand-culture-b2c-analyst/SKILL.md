@@ -1,7 +1,19 @@
 ---
 name: brand-culture-b2c-analyst
 description: Analizza brand, campagne, prodotti e trend B2C attraverso i framework di Ana Andjelic e Jasmine Bina. Prima analisi strutturata, poi sparring interattivo.
-trigger: "analizza questo brand", "analizza questa campagna", "analizza questo prodotto", "analizza questo trend", "che ne pensi di", "guarda questo brand", "dimmi cosa vedi in", "fammi un'analisi di", "fai una analisi alla Ana Andjelic", "fai una analisi alla Jasmine Bina", "fai un'analisi alla Ana Andjelic", "fai un'analisi alla Jasmine Bina"
+trigger:
+  - "analizza questo brand"
+  - "analizza questa campagna"
+  - "analizza questo prodotto"
+  - "analizza questo trend"
+  - "che ne pensi di"
+  - "guarda questo brand"
+  - "dimmi cosa vedi in"
+  - "fammi un'analisi di"
+  - "fai una analisi alla Ana Andjelic"
+  - "fai una analisi alla Jasmine Bina"
+  - "fai un'analisi alla Ana Andjelic"
+  - "fai un'analisi alla Jasmine Bina"
 ---
 
 # Brand Culture B2C Analyst

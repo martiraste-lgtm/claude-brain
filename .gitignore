@@ -3,7 +3,13 @@
 backups/
 
 # Config locale (permessi, MCP abilitati)
-settings.local.json
+# Il glob copre anche backup e varianti: settings.local.json contiene chiavi API,
+# la regola esatta non bastava (es. settings.local.json.doctor-backup passava).
+settings.local.json*
+
+# Backup di configurazione generati localmente
+*.doctor-backup
+*.bak
 
 # Sessioni e storia
 history.jsonl
