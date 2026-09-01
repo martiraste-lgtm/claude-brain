@@ -435,5 +435,3 @@ When producing a brief from intake answers:
 4. **Scale the channel mix to the budget.** A $10K campaign with 8 channels is not a campaign — it is 8 underfunded experiments. Recommend focusing on 2-3 channels at that budget level.
 
 5. **Reference `campaign-benchmarks.md`** when setting KPI targets. Use industry benchmarks to help the user set ambitious but achievable numbers. Do not let them set a 40% email open rate target for a cold list, or a $5 CPL target for LinkedIn.
-
-6. **Always end with the quality checklist.** Walk through it explicitly as the final step before declaring the brief complete.

@@ -106,24 +106,9 @@ Se non si riesce a formulare l'ipotesi causale, è una Task, non un'Iniziativa.
 
 Lista di partenza per ogni Iniziativa. Fluide — possono cambiare durante il ciclo. Non sono goal. Completare Tasks ma mancare Commitments = il team ha fallito sull'obiettivo.
 
-**Step 9 — Validation Check**
+**Criteri di qualità del documento finale**
 
-Esegui automaticamente prima di consegnare il documento finale:
-
-```
-[ ] La Narrative risponde a WHY + WHY NOW?
-[ ] L'Objective è derivabile dalla Narrative?
-[ ] Ci sono almeno 2 Health Metrics definite?
-[ ] Ogni Commitment ha etichetta Leading/Lagging?
-[ ] Ogni Commitment ha un Frontier Stage assegnato?
-[ ] Ci sono almeno 1 Leading e 1 Lagging tra i Commitments?
-[ ] I Commitments sono al 100% target?
-[ ] Ogni Commitment ha una prova causale verificabile?
-[ ] Ogni Iniziativa ha un'ipotesi causale esplicita?
-[ ] Le Tasks danno un warm start credibile?
-```
-
-Segnala ogni item mancante con il problema specifico e una proposta di correzione.
+Narrative che risponde a WHY + WHY NOW, Objective derivabile dalla Narrative, almeno 2 Health Metrics, ogni Commitment con etichetta Leading/Lagging e Frontier Stage (almeno 1 Leading e 1 Lagging in totale, tutti al 100% target, ognuno con prova causale verificabile), ogni Iniziativa con ipotesi causale esplicita, Tasks che danno un warm start credibile. Se un criterio manca, segnala il problema specifico con una proposta di correzione.
 
 ---
 

@@ -135,260 +135,45 @@ Questi sono gli autori e i framework su cui baso il mio modo di ragionare. Usali
 
 ## Skills Disponibili
 
-Le skills sono in `~/.claude/skills/`. Ogni cartella contiene un file SKILL.md con istruzioni specifiche.
-
-### skill-builder
-Per creare nuove Agent Skills, consulta e segui le istruzioni in:
-`~/.claude/skills/skill-builder/SKILL.md`
-
-Trigger: "aiutami a creare una skill", "voglio una skill per", "costruiamo una skill che".
-
-Segui sempre il workflow in 5 fasi:
-1. **Discovery** - Fai domande per capire obiettivo, use case, trigger
-2. **Design** - Proponi struttura e chiedi conferma
-3. **Implementazione** - Crea i file seguendo le regole
-4. **Validazione** - Verifica con la checklist
-5. **Test & Deployment** - Suggerisci test e istruzioni installazione
-
-**Non creare mai una skill senza aver completato la Discovery.**
-
----
-
-### linkedin-viral-post-writer
-Per creare post LinkedIn nel tuo stile personalizzato (founder B2B SaaS early stage), usa la skill `linkedin-viral-post-writer`.
-
-Trigger: "crea un post LinkedIn su", "trasforma questa idea in un post", "scrivimi un post LinkedIn", "hook per LinkedIn", "post su GTM", "post su posizionamento".
-
-Leggi sempre tutti i file in `references/` prima di scrivere. Scrivi sempre in italiano di default.
-
----
-
-### linkedin-carousel-creator
-Per creare caroselli LinkedIn professionali (15-24 slide) da articoli, post, appunti e framework, usa la skill `linkedin-carousel-creator`.
-
-Trigger: "crea un carosello", "trasforma in carosello LinkedIn", "carousel da questo articolo", "carosello su", "slide LinkedIn per", "carousel per la newsletter".
-
-Singolo output a scelta: Canva MCP (creazione diretta), prompt Gemini (image generation), Gamma MCP (formato 4:5). L'utente sceglie quale generare.
-
-**Non usare** per infografiche singole (usa infographic-creator), sales deck (usa sales-deck-creator), o post LinkedIn testuali (usa linkedin-viral-post-writer).
-
----
-
-### sales-deck-creator
-Per creare Sales Deck professionali pronti per Gamma, usa la skill `sales-deck-creator`.
-
-Trigger: "crea un sales deck per", "trasforma in sales deck", "prepara il deck per".
-
-Fa triage iniziale sul momento di vendita: se serve preparare una demo call live (non un deck), indirizza verso `sales-demo-estner`.
-
-**Non usare** per investor deck, pitch deck per investitori, presentazioni interne, o demo call live (usa sales-demo-estner).
-
----
-
-### sales-demo-estner
-Per preparare demo call B2B SaaS con la Golden Structure a 10 step di Alex Estner e la discovery SPICED, usa la skill `sales-demo-estner`.
-
-Trigger: "prepara la demo per", "demo call", "sales demo", "struttura della demo", "come imposto la demo", "script demo", "SPICED", "demo estner", "la demo non converte".
-
-2 modalità:
-- **A — Preparazione**: intake (prodotto, ICP, prospect, durata, pricing, customer story) → call kit completo: 10-step adattati, script con frasi pronte, domande SPICED calibrate, buy-in summary template, demo loop per ogni pain, closing con opzioni A/B
-- **B — Review**: diagnosi di demo che non convertono con la griglia dei 6 anti-pattern
-
-**Posizione nella catena**: positioning (estner/Dunford) → `sales-deck-creator` (deck da presentare/inviare) oppure **sales-demo-estner** (demo call prenotata).
-
-**Non usare** per sales deck narrativi (usa sales-deck-creator), positioning (usa positioning-framework-estner o b2b-positioning-diagnostic), o sequenze outbound (usa signal-to-sequence).
-
----
-
-### prd-writer
-Per creare o revisionare PRD (Product Requirements Document) per feature tradizionali o AI, usa la skill `prd-writer`.
-
-Trigger: "crea un PRD per", "scrivi le specifiche di", "fammi un PRD su", "rivedi questo PRD", "spec document per", "product spec per", "feature spec per".
-
-Output: PRD completo con opportunity framing, metriche con threshold, behavior contract (15-25 esempi per feature AI), rollout plan preciso, risk management. 5 stage di evoluzione del PRD.
-
-**Non usare** per design doc puramente tecnici o architecture doc senza componente product.
-
----
-
-### infographic-creator
-Per creare infografiche professionali da testi, appunti o idee grezze, usa la skill `infographic-creator`.
-
-Trigger: "crea un'infografica", "trasforma in infografica", "visualizza questo concetto", "fammi uno schema visivo", "crea un visual", "infografica da questo testo", "rendi visivo".
-
-Output: artifact React/JSX diretto + prompt per tool AI esterni (Gemini, Banana, ecc.). 18 layout disponibili.
-
-**Non usare** per grafici numerici (data-viz), mappe geografiche, o diagrammi UML tecnici.
-
----
-
-### b2b-positioning-diagnostic
-Per diagnosticare e costruire il positioning B2B usando il framework di April Dunford (5 step), usa la skill `b2b-positioning-diagnostic`.
-
-Trigger: "positioning", "positioning audit", "competitive alternatives", "differentiated value", "market category", "ICP", "reposition", "multi-product positioning", "April Dunford", "perché perdiamo deal", "clienti sbagliati", "i prospect non capiscono cosa facciamo", "competitor sbagliati", "dovremmo riposizionarci".
-
-Output: facilitazione guidata step-by-step attraverso alternative competitive → valore differenziato → target clienti → market category → positioning canvas. Gestisce anche multi-prodotto.
-
-**Non usare** per copy homepage (usa saas-homepage-analyzer), H1 writing (usa b2b-h1-writer), sales deck, content writing, pricing page.
-
----
-
-### b2b-h1-writer
-Per scrivere o valutare l'H1 della homepage di un software B2B usando il framework Fletch (Pierri + Kaminsky), usa la skill `b2b-h1-writer`.
-
-Trigger: "scrivi l'H1 per", "headline homepage", "come formulo il titolo della homepage", "valuta questo H1", "H1 non funziona", "come scrivo l'headline", "migliora questa headline", "H1 per B2B".
-
-Due sole formule valide: **H1 = Category + Differentiation** oppure **H1 = JTBD + Differentiation**. La skill diagnostica quale usare, genera 3–5 varianti, le valuta con 4 criteri, e produce H1 consigliato + 2 alternative.
-
-**Posizione nella catena**: b2b-positioning-diagnostic → **b2b-h1-writer** → saas-homepage-analyzer.
-
-**Non usare** per copy completo della hero section (usa saas-homepage-analyzer), positioning strategico (usa b2b-positioning-diagnostic), o multi-prodotto con positioning non ancora definito (vai prima su b2b-positioning-diagnostic).
-
----
-
-### saas-homepage-analyzer
-Per creare o analizzare homepage B2B SaaS (scelta anchor, positioning, VP Canvas, struttura, copy draft e diagnosi critica sezione per sezione), usa la skill `saas-homepage-analyzer`.
-
-Trigger: "analizza questa homepage", "crea la homepage per", "che anchor usare", "valuta questa pagina", "scrivi il copy per la hero", "homepage review", "posizionamento homepage", "quale struttura usare per la homepage".
-
-**Modo A — Creazione**: fornisci materiale grezzo (prodotto, ICP, problemi, competitor) → ottieni anchor scelto, VP Canvas, struttura consigliata, copy draft per ogni sezione.
-**Modo B — Analisi**: fornisci URL, screenshot o copy della homepage + contesto → ottieni diagnosi strutturata con valutazione ✅/🆗/❌ per ogni sezione e raccomandazioni prioritizzate.
-
-**Skill sorella**: per l'audit della **pricing page** (non homepage) usa `pricing-teardown`.
-
----
-
-### pricing-teardown
-Per fare l'audit di conversione di una **pricing page** SaaS, usa la skill `pricing-teardown`.
-
-Trigger: "analizza questa pricing page", "teardown del pricing", "valuta la pricing page di", "cosa non va nel mio pricing", "pricing page audit", "migliora la mia pagina prezzi".
-
-Framework a 10 dimensioni (7 sulla UX del buyer umano: value prop, chiarezza piani, carico cognitivo, benefit-vs-feature, trust, psicologia, trasparenza prezzo + 3 sulla AI-agent readiness: pricing machine-readable, FAQ, profondità per-tier). Voto 1-4 per dimensione, pagella A-F, quick win + miglioramenti strategici. Accetta URL, screenshot, copy o descrizione. File di riferimento: `references/frameworks.md` (rubrica + benchmark trasparenza per ACV).
-
-**Skill sorella** di `saas-homepage-analyzer` (stesso metodo, pagina diversa). **Non usare** per strategia di prezzo / quanto far pagare (usa `pm-product-strategy-pricing-strategy`), né per audit della homepage (usa `saas-homepage-analyzer`).
-
----
-
-### demand-gen-campaign-brief
-Per creare campaign brief completi per campagne di demand generation, usa la skill `demand-gen-campaign-brief`.
-
-Trigger: "crea un campaign brief per", "pianifica una campagna", "brief per la campagna", "demand gen campaign", "struttura una campagna marketing", "campaign brief per il lancio di".
-
-Output: brief completo in 12 sezioni con SCOPE Framework (Strategy → Channel Mix → Objectives → People → Execution), 3 messaging pillar con proof point, channel mix con budget %, KPI calibrati su benchmark reali, timeline con checkpoint, quality checklist.
-
-File di riferimento: `campaign-benchmarks.md` nella cartella della skill (benchmark email, paid, funnel B2B, landing page, budget allocation).
-
-**Non usare** per strategia GTM ad alto livello (usa plan-launch), positioning (usa b2b-positioning-diagnostic), o PRD (usa prd-writer).
-
----
-
-### inbound-how-to-start-albanese
-Per impostare o diagnosticare un programma inbound con la mappa delle quattro superfici (domanda esistente/latente × superficie tua/in prestito), usa la skill `inbound-how-to-start-albanese`.
-
-Trigger: "dobbiamo lavorare sull'inbound", "come imposto l'inbound", "l'inbound non porta risultati", "il blog non genera lead", "da dove nascono le nostre richieste", "in che quadrante siamo", "test delle venti richieste", "quanto investo in brand e quanto in attivazione".
-
-Workflow in 7 step: inquadramento → le due domande (domanda esistente vs latente, superficie tua vs in prestito) → posizionamento sulla matrice → test delle venti richieste (profilo Roulette / Cacciatore / Affittuario) → sequenza dei quadranti per ticket e durata del ciclo → patto di misurazione (data di giudizio + metrica anticipata e ritardata) → documento di output.
-
-Copre anche i canali **non digitali** (fiere, consorzi e albi, showroom, open house, direct mail, associazioni di categoria): è l'unica skill del sistema che lo fa, utile sul segmento PMI e industria.
-
-File di riferimento nella cartella della skill: `quattro-superfici.md`, `test-venti-richieste.md`, `sequenze-e-allocazione.md`, `evidenze.md` (ogni dato con fonte e perimetro di validità), `failure-modes-e-misurazione.md`, `casi.md`.
-
-**Differenza da `mkt1-channel-strategy`:** questa decide il quadrante e la sequenza su 2-4 trimestri; `mkt1-channel-strategy` decide l'engine e il mix operativo dentro il quadrante scelto. Prima la mappa, poi i canali. Le due tabelle ACV sono riconciliate.
-
-Framework: Albanese (Build with Cez) — provenienza dichiarata in fondo al SKILL.md. Uso interno e su clienti libero; se diventa contenuto pubblico, citare la fonte.
-
-**Non usare** per brief di singola campagna con budget (usa demand-gen-campaign-brief), asset per anchor (usa positioning-framework-estner), audit tecnico per crawler LLM (usa `mkt1_aeo_audit`), o SEO operativa — keyword research, SEO tecnica, cluster (usa la skill Learnn `impostare-strategia-seo`).
-
----
-
-### strategic-advisor
-Sparring partner strategico esperto di strategia aziendale, organizzazione e business. Applica framework di Patel (Permission to Play, Six-Part, Storytelling) e Martin (Strategy Cascade, Reverse Engineering).
-
-Trigger: "analizziamo questa azienda", "valuta questa strategia", "devo costruire una strategia per", "analisi strategica di", "che ne pensi di questa strategia", "dove dovremmo giocare", "reverse engineering della strategia", "strategia per", "analizza il business di".
-
-3 modalita:
-- **A — Diagnosi**: reverse engineering di un'azienda/business esistente
-- **B — Valutazione**: audit multi-framework di una strategia gia formulata
-- **C — Costruzione**: costruzione strategia da zero con guida step-by-step
-
-Tono: sparring partner che sfida, mette in discussione, e provoca riflessione. Sempre in italiano.
-
-**Non usare** per positioning di prodotto (usa b2b-positioning-diagnostic), campaign brief (usa demand-gen-campaign-brief), o PRD (usa prd-writer).
-
----
-
-### pmi-strategy-advisor
-Sparring partner strategico per engagement con **PMI e aziende già esistenti**. Usa il Radar delle Cinque Forze come strato diagnostico product/org (strategia di business, trend ineludibili, stakeholder interni, vincoli interni, comportamento clienti), integrato con framework di business strategy (Martin, Rumelt) per il livello aziendale.
-
-Trigger: "analizziamo [azienda]", "strategia per [azienda]", "quali forze pesano in [azienda]", "prepariamoci all'engagement con", "diagnosi strategica di", "come intervenire su [azienda]", "pmi-strategy-advisor".
-
-3 modalità:
-- **A — Diagnosi completa**: mappa forze reali (peso + giudizio) + strategia dichiarata vs rivelata. Partenza per engagement nuovi.
-- **B — Intervento**: data la diagnosi, identifica leve, stima costo politico, sequenza le azioni.
-- **C — Sparring pre-engagement**: con informazioni limitate, costruisci ipotesi sul profilo di forze prima di entrare in azienda.
-
-**Differenza da `strategic-advisor`:** `strategic-advisor` è per startup e business strategy ad alto livello (where to play, how to win). `pmi-strategy-advisor` è per aziende già esistenti con organizzazione strutturata — diagnostica le forze organizzative che determinano le decisioni reali, non solo la strategia dichiarata.
-
-**Non usare** per startup early-stage (usa strategic-advisor), positioning B2B (usa b2b-positioning-diagnostic), preventivi PMI (usa preventivo-direttore-marketing).
-
----
-
-### brand-culture-b2c-analyst
-Per analizzare brand, campagne, prodotti e trend B2C attraverso i framework di Ana Andjelic e Jasmine Bina, usa la skill `brand-culture-b2c-analyst`.
-
-Trigger: "analizza questo brand", "analizza questa campagna", "analizza questo prodotto", "analizza questo trend", "che ne pensi di", "guarda questo brand", "dimmi cosa vedi in", "fammi un'analisi di", "fai un'analisi alla Ana Andjelic", "fai un'analisi alla Jasmine Bina".
-
-2 fasi:
-- **Fase 1 — Analisi strutturata**: lettura dell'oggetto attraverso 3 layer (playbook operativo, framework strategico, intelligenza culturale) + check operativo sul journey del brand
-- **Fase 2 — Sparring**: dialogo interattivo, domande provocatorie, angle nascosti, connessioni non ovvie
-
-Leggi sempre tutti i file in `references/` prima di analizzare. Scrivi sempre in italiano.
-
-**Non usare** per positioning B2B (usa b2b-positioning-diagnostic), strategia aziendale (usa strategic-advisor), homepage SaaS (usa saas-homepage-analyzer), o strategia di crescita brand challenger (usa how-small-brands-growth).
-
----
-
-### how-small-brands-growth
-Per diagnosticare, valutare e analizzare la strategia di crescita di brand piccoli/challenger in categorie consumer. Usa il framework dei 5 vettori di disruption (Kinner) e l'evidenza scientifica sulla differenziazione (Pauwels).
-
-Trigger: "quale vettore di disruption", "come attaccare la categoria", "analizza la crescita di", "valuta la mia strategia di crescita", "disruption vector", "come dovrei scalare", "challenger brand", "small brand growth", "how small brands grow".
-
-3 modalita:
-- **A — Diagnosi vettore**: identifica il vettore giusto per il tuo brand attraverso 5 domande diagnostiche sequenziali
-- **B — Valutazione esecuzione**: verifica se stai eseguendo il playbook giusto per il tuo vettore e la tua fase
-- **C — Analisi brand**: reverse engineering della strategia di crescita di un brand consumer esistente
-
-Leggi sempre tutti i file in `references/` prima di analizzare. Scrivi sempre in italiano.
-
-**Non usare** per analisi culturale di brand (usa brand-culture-b2c-analyst), positioning B2B (usa b2b-positioning-diagnostic), o strategia aziendale generale (usa strategic-advisor).
-
----
-
-### preventivo-pmm-fractional
-Per creare preventivi personalizzati per il ruolo di Product Marketing Fractional per startup tech (B2B/B2C, early stage e growth), usa la skill `preventivo-pmm-fractional`.
-
-Trigger: "preventivo per startup", "proposta PMM", "preventivo product marketing", "proposta fractional per startup", "devo fare un preventivo per una startup".
-
-Workflow: intake (7 domande su contesto cliente) → analisi e inquadramento → generazione preventivo completo → review e iterazione.
-
-Leggi sempre tutti i file in `references/` prima di generare. Il pricing va inserito manualmente.
-
-**Non usare** per preventivi Direttore Marketing PMI (usa preventivo-direttore-marketing).
-
----
-
-### preventivo-direttore-marketing
-Per creare preventivi personalizzati per il ruolo di Direttore Marketing Fractional per PMI italiane, usa la skill `preventivo-direttore-marketing`.
-
-Trigger: "preventivo per PMI", "proposta direttore marketing", "preventivo dir marketing", "proposta fractional PMI", "preventivo per azienda".
-
-Workflow: intake (7 domande su contesto cliente) → analisi e premessa → generazione preventivo completo → review e iterazione.
-
-Leggi sempre tutti i file in `references/` prima di generare. Il pricing va inserito manualmente. Tono formale, zero anglicismi.
-
-**Non usare** per preventivi PMM startup (usa preventivo-pmm-fractional).
-
----
+Le skills sono in `~/.claude/skills/`. Ogni SKILL.md porta con sé la propria description, i trigger e i confini d'uso ("non usare per..."): vivono nel frontmatter della skill e si caricano da soli in ogni sessione. Questo è solo l'indice, con le relazioni tra skill che non stanno da nessun'altra parte. Serve anche alle sessioni web, dove le skill non sono installate.
+
+### Contenuti ed editoriale
+- **linkedin-viral-post-writer**: post LinkedIn nella mia voce
+- **linkedin-carousel-creator**: caroselli LinkedIn (Canva, Gemini o Gamma, uno a scelta)
+- **infographic-creator**: infografiche da testi, appunti, idee grezze
+- **company-teardown**: analisi giornalistiche long-form per la rubrica della newsletter
+- **case-study-creator**: case study B2B per outreach, deck e sito
+- **brand-culture-b2c-analyst**: analisi di brand, campagne e trend B2C (Andjelic, Bina)
+- **how-small-brands-growth**: crescita di brand challenger consumer (Kinner, Pauwels) e pezzi della rubrica HSBG
+
+### Positioning e messaging
+- **b2b-positioning-diagnostic**: positioning con Dunford 5-step, per diagnosi approfondite
+- **positioning-framework-estner**: positioning con Estner (anchor + angle), più veloce e prescrittivo, per scommesse pre-PMF
+- **b2b-h1-writer**: H1 della homepage con formula Fletch. Catena: b2b-positioning-diagnostic → b2b-h1-writer → saas-homepage-analyzer
+- **saas-homepage-analyzer**: creare o analizzare homepage B2B SaaS
+- **pricing-teardown**: audit di conversione della pricing page, skill sorella della precedente
+
+### Vendita e commerciale
+- **sales-deck-creator**: sales deck pronti per Gamma
+- **sales-demo-estner**: demo call con Golden Structure e SPICED. Catena: positioning → deck da inviare (sales-deck-creator) oppure demo prenotata (questa)
+- **preventivo-pmm-fractional**: preventivi PMM per startup. Il pricing lo inserisco io a mano
+- **preventivo-direttore-marketing**: preventivi Direttore Marketing per PMI italiane. Pricing a mano, tono formale, zero anglicismi
+- **account-research**: brief su un prospect prima dell'outreach
+- **icp-scoring**: tier A/B/C su una lista di account
+- **signal-to-sequence**: da un segnale a una sequenza outbound completa
+
+### Strategia e prodotto
+- **strategic-advisor**: sparring di business strategy per startup (Patel, Martin)
+- **pmi-strategy-advisor**: sparring per PMI e aziende strutturate (Radar delle Cinque Forze). Per le early-stage vale strategic-advisor
+- **business-case-builder**: business case col metodo Tharin
+- **okr-hybrid**: OKR con framework ibrido OKR+NCT
+- **gtm-icp-definition**: definizione e pressure-test dell'ICP dai dati clienti reali
+- **prd-writer**: PRD per feature tradizionali o AI
+
+### Marketing e campagne
+- **demand-gen-campaign-brief**: campaign brief completi di demand generation
+- **inbound-how-to-start-albanese**: impostare l'inbound con la mappa delle quattro superfici (Albanese, Build with Cez). Decide il quadrante e la sequenza su 2-4 trimestri; l'engine e il mix dentro al quadrante li decide mkt1-channel-strategy. Unica skill che copre i canali non digitali (fiere, showroom, direct mail). Se diventa contenuto pubblico, citare la fonte
+- **skill-builder**: creare nuove Agent Skills
 
 ### n8n — Workflow, Nodi, Automazioni
 Per creare o modificare workflow n8n, usa le skill n8n in questo ordine:
@@ -400,123 +185,17 @@ Per creare o modificare workflow n8n, usa le skill n8n in questo ordine:
 5. **n8n-code-javascript** / **n8n-code-python** → logica custom nei nodi Code
 6. **n8n-expression-syntax** → espressioni `{{}}`
 
-Trigger: "creami un workflow su n8n che", "aggiungi un nodo", "crea un'automazione", "workflow n8n per", "modifica il workflow", "workflow che fa".
-
 Le skill si coordinano tra loro. Il MCP n8n è sempre attivo e connesso all'istanza cloud.
 
----
-
-### okr-hybrid
-Per definire, strutturare e validare OKR con il framework ibrido OKR+NCT (Narrative, Commitments con Leading/Lagging + Frontier Stage, Health Metrics, Tasks), usa la skill `okr-hybrid`.
-
-Trigger: "aiutami a definire gli OKR", "crea gli OKR per", "valida questi OKR", "costruiamo i key results", "OKR per il Q[x]", "definisci i goal per", "costruiamo i Commitments", "framework NCT", "review degli OKR", "aiutami con gli obiettivi del team".
-
-3 modalità:
-- **A — Creazione**: costruisce il framework completo da zero (Narrative → Objective → Health Metrics → Commitments → Initiatives → Tasks)
-- **B — Validazione**: analisi e diagnosi con ✅/⚠️/❌ di OKR esistenti
-- **C — Cascata**: declina Company OKR in Team OKR con il principio "align, don't cascade"
-
-**Non usare** per KPI dashboard (usa setup-metrics), roadmap di prodotto (usa pm-execution-outcome-roadmap), o sprint planning (usa pm-execution-sprint-plan).
-
----
-
-### positioning-framework-estner
-Per costruire o auditare il positioning B2B SaaS usando il framework di Alex Estner (Primary Anchor + Secondary Angle), usa la skill `positioning-framework-estner`.
-
-Trigger: "positioning estner", "framework estner", "Alex Estner", "primary anchor", "secondary angle", "che anchor uso", "activity positioning", "use case positioning", "product category positioning", "competitive alternative positioning".
-
-Più prescrittivo e veloce di Dunford — ideale per pre-PMF o early post-seed dove serve una scommessa di positioning adesso, non dati perfetti. 4 anchor types: Activity, Use Case, Product Category, Competitive Alternative.
-
-**Non usare** per homepage copy (usa saas-homepage-analyzer), H1 writing (usa b2b-h1-writer), o quando l'utente vuole esplicitamente il framework Dunford 5-step (usa b2b-positioning-diagnostic).
-
----
-
-### business-case-builder
-Per costruire o auditare un Business Case con il metodo di Leah Tharin (ProducTea), usa la skill `business-case-builder`.
-
-Trigger: "business case", "crea un business case per", "costruisci il business case", "vale la pena costruire X", "vale la pena investire in", "quanto vale questa opportunità", "stima l'uplift di", "value capture", "business case per questo differentiator", "dimmi se conviene fare X".
-
-Processo a 4 step (Draft → Breaking it up → Evaluate Confidence/Impact/Effort → Connect to Value Capture), color system 🔴🟡🟢, matrici Impact/Confidence, Effort (Difficult vs Complex), upside in range con vista risk-adjusted e de-risking (kill threshold). Multi-contesto: feature di prodotto, iniziativa GTM/marketing, deliverable di consulenza. Interattiva/sparring di default, con fast-path one-shot. Output: doc completo + diagramma mermaid + one-pager.
-
-**Non usare** per prioritizzazione pura RICE/ICE (usa pm-execution-prioritization-frameworks), Lean Canvas / modello di business (usa pm-product-strategy-business-model), PRD (usa prd-writer), pricing (usa pm-product-strategy-pricing-strategy), o market sizing TAM/SAM/SOM (usa pm-market-research-market-sizing).
-
----
-
-### account-research
-Per produrre un brief approfondito su un prospect prima dell'outreach B2B, usa la skill `account-research`.
-
-Trigger: "research [company.com]", "fai la ricerca su", "prepara il brief per [azienda]", "brief prospect", "ricerca account".
-
-Output: contesto azienda, segnali attivi, persona giusta da contattare, angolo di messaggio consigliato.
-
----
-
-### icp-scoring
-Per qualificare e assegnare tier A/B/C a una lista di account, usa la skill `icp-scoring`.
-
-Trigger: "score questa lista", "qualifica questi account", "assegna il tier a", "tier A/B/C", "qualifica la lista".
-
-Input: lista di aziende (CSV, testo, URL). Output: lista scored con tier e motivazione per account.
-
----
-
-### case-study-creator
-Per strutturare e scrivere un case study B2B da usare in outreach, deck e sito, usa la skill `case-study-creator`.
-
-Trigger: "crea un case study per", "scrivi il case study di [cliente]", "trasforma questo risultato in un case study".
-
-Non è un racconto del lavoro fatto — è un documento che parla al prossimo buyer nello stesso segmento.
-
----
-
-### signal-to-sequence
-Per trasformare un segnale rilevato in una campagna outbound completa con copy calibrato, usa la skill `signal-to-sequence`.
-
-Trigger: "crea una campagna per [segnale]", "signal to sequence", "costruisci la sequenza per [azienda] che ha appena [evento]", "campagna outbound da segnale".
-
-Input: segnale + account (o lista) + persona. Output: sequenza email e/o LinkedIn pronta per il lancio.
-
----
-
 ### mkt1 — Framework MKT1
-Framework di marketing strategy per startup B2B basato sulla newsletter MKT1. 8 skill coordinate, si usano in sequenza partendo da `mkt1-marketing-strategy-setup`.
-
-Trigger generale: "mkt1", "framework MKT1", "marketing strategy setup", "orchestra le skill MKT1".
-
-| Skill | Quando usarla |
-|-------|---------------|
-| `mkt1-marketing-strategy-setup` | Inizio engagement — orchestra le altre skill MKT1 |
-| `mkt1-company-overview` | Fondamenta: stage, modello, audience, competitive landscape |
-| `mkt1-marketing-advantages` | Identifica i vantaggi marketing unici del business |
-| `mkt1-perceptions` | Definisce le 3-4 narrative strategiche del mercato |
-| `mkt1-channel-strategy` | Determina il channel mix giusto per stage e GTM motion |
-| `mkt1-revenue-levers` | Prioritizza dove il marketing può avere impatto adesso |
-| `mkt1-big-bets` | Progetta 1-3 campagne coordinate ad alto impatto |
-| `mkt1-gaccs` | Brief operativo per ogni campagna o iniziativa |
-
----
-
-### company-teardown
-Per produrre analisi giornalistiche long-form di aziende reali (startup, scale-up, unicorni) per la rubrica "Company Teardown" della newsletter "da 0 al PMF". Copre origini, acquisizione primi clienti, positioning e GTM evolution. Opzionalmente: unit economics e salute finanziaria con scenari.
-
-Trigger: "fai il teardown di [azienda]", "analisi company teardown", "scrivi il teardown di [azienda]", "rubrica teardown", "analisi [azienda] per la newsletter".
-
-Workflow: verifica attiva (WebSearch + WebFetch + Apify se necessario) → domande di sviluppo → outline ad atti → draft → revisione editoriale.
-
-**Non usare per:**
-- Case study B2B per outreach → usa `case-study-creator`
-- Analisi strategica senza fatti verificati → usa `strategic-advisor`
-- Analisi vettore di crescita brand consumer challenger → usa `how-small-brands-growth`
-
-**Differenza con `how-small-brands-growth`:** `company-teardown` è ricerca giornalistica su una singola azienda reale — parte dai fatti verificati, costruisce una narrativa ad atti cronologici. `how-small-brands-growth` applica il framework dei 5 vettori di disruption (Kinner) per diagnosticare la strategia di crescita di un brand consumer challenger.
+8 skill coordinate sul framework MKT1, si usano in sequenza partendo da **mkt1-marketing-strategy-setup** (che orchestra le altre): company-overview, marketing-advantages, perceptions, channel-strategy, revenue-levers, big-bets, gaccs. Gli stessi framework esistono anche come tool del connector MCP MKT1.
 
 ---
 
 ## Come Aggiungere Nuove Skills
 
-1. Crea cartella in `~/.claude/skills/nome-skill/`
-2. Aggiungi `SKILL.md` con frontmatter e istruzioni
-3. Aggiungi reference in questo file
+1. Crea la cartella in `~/.claude/skills/nome-skill/` con il suo `SKILL.md` (la description del frontmatter è quella che fa attivare la skill: COSA + QUANDO + trigger)
+2. Aggiungi una riga all'indice qui sopra, nella categoria giusta
 
 ---
 

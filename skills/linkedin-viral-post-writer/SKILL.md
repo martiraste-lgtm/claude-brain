@@ -70,7 +70,7 @@ I 4 elementi che ogni post deve avere:
 
 ### Hook (Prime 1-3 righe)
 
-- Genera sempre **3-5 varianti** prima di scegliere
+- Genera più varianti quando la direzione non è ovvia, una sola quando lo è
 - Rispetta i limiti caratteri: righe 1-2 = **62 char**, riga 3 = **50 char**
 - Combina 2+ template da guida-hook.md per unicità
 - Usa i pattern del tuo stile (mio-stile.md): domanda diretta, affermazione provocatoria, problema comune
